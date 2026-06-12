@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1E3A2F">
+<title>Vail Family Itinerary · June 22–29, 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
+:root{--pine:#1E3A2F;--sage:#4A7C5C;--sky:#6BA3BE;--snow:#F5F2EB;--sand:#E8DFC8;--rust:#B85C38;--gold:#C49A3A;--ink:#1A1A1A;--mist:#8BA89B;--cream:#FDFAF4;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;}
+.hero{background:linear-gradient(160deg,var(--pine) 0%,#2D5040 50%,var(--sky) 100%);color:white;padding:56px 40px 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;bottom:-2px;left:0;right:0;height:50px;background:var(--cream);clip-path:ellipse(55% 100% at 50% 100%);}
+.hero-badge{display:inline-block;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:900;line-height:1.1;margin-bottom:8px;}
+.hero-sub{font-size:.95rem;color:rgba(255,255,255,.75);font-weight:300;max-width:520px;margin-bottom:20px;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+.hero-chip{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:5px 13px;font-size:12px;display:flex;align-items:center;gap:5px;}
+.sun-bar{display:flex;flex-wrap:wrap;gap:12px;background:rgba(0,0,0,.2);border-radius:10px;padding:12px 16px;max-width:560px;}
+.sun-item{font-size:12px;display:flex;align-items:center;gap:6px;}
+.sun-item strong{font-size:13px;}
+.tabs-bar{background:var(--snow);border-bottom:1px solid var(--sand);padding:0 40px;display:flex;gap:0;overflow-x:auto;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.tab-btn{background:none;border:none;border-bottom:3px solid transparent;padding:13px 16px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;color:var(--mist);cursor:pointer;white-space:nowrap;transition:all .2s;}
+.tab-btn:hover{color:var(--pine);}
+.tab-btn.active{color:var(--pine);border-bottom-color:var(--sage);}
+.main-wrap{max-width:980px;margin:0 auto;padding:36px 24px 80px;}
+.tab-pane{display:none;}
+.tab-pane.active{display:block;}
+.section-eyebrow{font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--sage);margin-bottom:4px;}
+.section-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--pine);margin-bottom:22px;}
+.action-row{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap;}
+.action-btn{background:var(--pine);color:white;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:'Inter',sans-serif;transition:background .15s;}
+.action-btn:hover{background:var(--sage);}
+.action-btn.sec{background:white;color:var(--pine);border:1px solid var(--sand);}
+.action-btn.sec:hover{background:var(--snow);}
+/* FLIGHT BANNER */
+.flight-card{background:var(--pine);color:white;border-radius:14px;padding:22px 28px;margin-bottom:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.flight-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:10px;grid-column:1/-1;color:var(--gold);}
+.flight-leg{background:rgba(255,255,255,.1);border-radius:8px;padding:12px 16px;font-size:.84rem;}
+.flight-leg strong{display:block;font-size:.95rem;margin-bottom:4px;}
+.flight-detail{color:rgba(255,255,255,.7);font-size:.8rem;line-height:1.7;}
+@media(max-width:600px){.flight-card{grid-template-columns:1fr;}}
+/* LODGING */
+.lodging-card{background:linear-gradient(135deg,var(--pine) 0%,#2D5040 100%);border-radius:16px;padding:26px;color:white;margin-bottom:24px;}
+.lodging-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:4px;}
+.lodging-sub{font-size:.82rem;color:rgba(255,255,255,.6);margin-bottom:14px;}
+.lodging-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-bottom:14px;}
+.lodging-stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:8px 12px;}
+.lodging-stat-label{font-family:'Roboto Mono',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:2px;}
+.lodging-stat-val{font-size:.88rem;font-weight:600;}
+.amenity-row{display:flex;flex-wrap:wrap;gap:7px;}
+.amenity-chip{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:3px 11px;font-size:11px;}
+/* DAY CARDS */
+.day-card{background:white;border-radius:16px;border:1px solid var(--sand);margin-bottom:20px;overflow:hidden;box-shadow:0 2px 10px rgba(30,58,47,.07);}
+.day-header{background:var(--pine);color:white;padding:14px 22px;display:flex;align-items:center;gap:14px;cursor:pointer;user-select:none;}
+.day-header:hover{background:#25473a;}
+.day-badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:4px 8px;font-family:'Roboto Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:1px;white-space:nowrap;}
+.day-num{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;line-height:1;color:var(--gold);min-width:44px;}
+.day-info{flex:1;}
+.day-label{font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:1.5px;color:rgba(255,255,255,.5);text-transform:uppercase;}
+.day-title{font-size:1.05rem;font-weight:600;color:white;}
+.day-toggle{color:rgba(255,255,255,.5);font-size:16px;transition:transform .25s;}
+.day-toggle.open{transform:rotate(180deg);}
+.day-body{padding:0;display:none;}
+.day-body.open{display:block;}
+.activity{padding:18px 22px;border-bottom:1px solid var(--sand);display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;}
+.activity:last-child{border-bottom:none;}
+.act-icon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;margin-top:2px;flex-shrink:0;}
+.i-hike{background:#E8F4ED;} .i-food{background:#FFF0E8;} .i-drink{background:#FFF8E0;} .i-act{background:#E8F0FF;} .i-see{background:#F0EEF8;} .i-note{background:var(--sand);}
+.act-header{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;margin-bottom:6px;}
+.act-name{font-size:.98rem;font-weight:600;color:var(--pine);}
+.tag{font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:10px;font-weight:500;}
+.t-hike{background:#C8E6D4;color:#1E5C35;} .t-food{background:#FFD8C0;color:#8B3A1A;} .t-act{background:#C8D8F8;color:#1A3080;} .t-see{background:#E0DDF5;color:#4A3080;} .t-tip{background:var(--sand);color:#5A4A2A;} .t-transit{background:#E8E8E8;color:#444;}
+.must{background:var(--rust);color:white;font-family:'Roboto Mono',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:4px;margin-left:4px;vertical-align:middle;}
+.hike-stats{display:flex;flex-wrap:wrap;gap:7px;margin:7px 0;}
+.stat{background:var(--snow);border:1px solid var(--sand);border-radius:6px;padding:3px 9px;font-family:'Roboto Mono',monospace;font-size:11px;color:var(--pine);}
+.act-desc{font-size:.86rem;color:#4A4A4A;line-height:1.65;}
+.act-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+.act-link{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;font-weight:500;color:var(--sky);background:white;border:1px solid #C8DDE8;border-radius:6px;padding:3px 9px;text-decoration:none;transition:background .15s;}
+.act-link:hover{background:#EBF4FA;}
+.pro-tip{background:#FFFBE8;border-left:3px solid var(--gold);padding:8px 12px;font-size:.82rem;color:#5A4A00;margin-top:8px;border-radius:0 6px 6px 0;}
+.pro-tip strong{color:#7A6000;}
+.fee-note{background:#FFF0E8;border-left:3px solid var(--rust);padding:7px 12px;font-size:.8rem;color:#6A2A0A;margin-top:7px;border-radius:0 6px 6px 0;}
+.fee-note strong{color:#8B3A1A;}
+.day-section-label{padding:9px 22px 4px;font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--mist);background:var(--snow);border-bottom:1px solid var(--sand);}
+/* GONDOLA INFO BOX */
+.gondola-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:24px;}
+.gondola-card{background:white;border:1px solid var(--sand);border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.05);}
+.gondola-head{padding:14px 18px;display:flex;align-items:center;gap:10px;}
+.gondola-icon{font-size:24px;}
+.gondola-title{font-weight:600;font-size:1rem;color:var(--pine);}
+.gondola-sub{font-size:.78rem;color:var(--mist);}
+.gondola-body{padding:0 18px 14px;font-size:.83rem;color:#4A4A4A;line-height:1.7;}
+.gondola-body .stat-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
+/* TRACKING TABLE */
+.track-wrap{overflow-x:auto;margin-bottom:24px;}
+.track-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:700px;}
+.track-table th{background:var(--pine);color:white;text-align:left;padding:9px 11px;font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:500;}
+.track-table td{padding:8px 11px;border-bottom:1px solid var(--sand);vertical-align:top;}
+.track-table tr:nth-child(even) td{background:var(--snow);}
+.track-table tr:hover td{background:#EDF5EF;}
+.hits-wrap{display:flex;align-items:center;gap:6px;}
+.hit-dots{display:flex;gap:3px;}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--sage);}
+.dot.e{background:var(--sand);}
+.source-legend{background:white;border:1px solid var(--sand);border-radius:10px;padding:16px 20px;margin-bottom:20px;}
+.source-legend h4{font-size:.88rem;font-weight:600;color:var(--pine);margin-bottom:10px;}
+.source-list{display:flex;flex-wrap:wrap;gap:8px;}
+.src-chip{background:var(--snow);border:1px solid var(--sand);border-radius:6px;padding:4px 10px;font-family:'Roboto Mono',monospace;font-size:11px;color:var(--pine);}
+.src-num{color:var(--rust);font-weight:600;}
+/* EAT GRID */
+.eat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:14px;margin-bottom:24px;}
+.eat-card{background:white;border:1px solid var(--sand);border-radius:12px;padding:16px;box-shadow:0 1px 5px rgba(0,0,0,.05);}
+.eat-hdr{display:flex;align-items:center;gap:9px;margin-bottom:7px;}
+.eat-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;background:var(--snow);flex-shrink:0;}
+.eat-name{font-weight:600;font-size:.93rem;color:var(--pine);}
+.eat-cat{font-family:'Roboto Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--mist);margin-bottom:5px;}
+.eat-desc{font-size:.82rem;color:#5A5A5A;line-height:1.55;}
+.eat-hours{font-family:'Roboto Mono',monospace;font-size:10px;color:var(--pine);background:var(--snow);border:1px solid var(--sand);border-radius:5px;padding:3px 8px;margin:5px 0 4px;display:inline-block;}
+.eat-closed-note{font-size:.78rem;color:var(--rust);font-weight:500;margin-top:3px;}
+.eat-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px;}
+.eat-link{display:inline-flex;align-items:center;gap:3px;font-size:.78rem;color:var(--sky);background:white;border:1px solid #C8DDE8;border-radius:5px;padding:2px 8px;text-decoration:none;}
+.eat-link:hover{background:#EBF4FA;}
+/* INFO BOXES */
+.info-box{background:white;border:1px solid var(--sand);border-radius:12px;padding:18px 22px;margin-bottom:18px;}
+.info-box h4{font-weight:600;color:var(--pine);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.info-box ul{padding-left:16px;}
+.info-box li{font-size:.86rem;color:#4A4A4A;line-height:1.75;}
+/* FILTER */
+.filter-bar{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px;}
+.fb{background:white;border:1px solid var(--sand);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:500;cursor:pointer;transition:all .15s;color:var(--ink);}
+.fb:hover,.fb.on{background:var(--pine);color:white;border-color:var(--pine);}
+/* MAP */
+#mapContainer{width:100%;height:460px;border-radius:14px;border:1px solid var(--sand);overflow:hidden;margin-bottom:24px;background:#f0ede8;}
+.map-legend{background:white;border:1px solid var(--sand);border-radius:10px;padding:14px 18px;margin-bottom:14px;}
+.map-legend h4{font-size:.88rem;font-weight:600;margin-bottom:8px;color:var(--pine);}
+.legend-items{display:flex;flex-wrap:wrap;gap:8px;}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:12px;}
+a{color:var(--sky);text-decoration:none;}
+a:hover{text-decoration:underline;}
+@media(max-width:640px){
+.hero{padding:36px 18px 56px;}
+.tabs-bar{padding:0 4px;}
+.tab-btn{padding:12px 9px;font-size:11px;}
+.main-wrap{padding:16px 10px 70px;}
+.activity{grid-template-columns:24px 1fr;gap:8px;}
+.day-num{font-size:1.5rem;}
+.eat-grid,.gondola-grid{grid-template-columns:1fr;}
+.track-table{font-size:11px;}
+.track-table th,.track-table td{padding:5px 6px;}
+.flight-card{grid-template-columns:1fr;}
+.sun-bar{gap:8px;}
+.hero h1{font-size:1.75rem;}
+.action-btn{padding:8px 12px;font-size:12px;}
+body{-webkit-text-size-adjust:100%;}
+}
+@supports(padding:max(0px)){
+.tabs-bar{padding-left:max(4px,env(safe-area-inset-left));padding-right:max(4px,env(safe-area-inset-right));}
+.main-wrap{padding-bottom:max(70px,env(safe-area-inset-bottom));}
+}
+.day-header,.tab-btn,.fb{-webkit-tap-highlight-color:rgba(30,58,47,0.15);}
+@media print{.tabs-bar,.action-row{display:none;}.tab-pane{display:block!important;}.day-body{display:block!important;}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">📍 Vail, Colorado · Family Vacation</div>
+  <h1>Vail Family Adventure<br>June 22–29, 2026</h1>
+  <p class="hero-sub">7 nights at Landmark Residences #507 · Lionshead Village · Ages 1–9 · Hikes, gondolas, alpine lakes & great eats</p>
+  <div class="hero-meta">
+    <div class="hero-chip">🏔 Lionshead Village</div>
+    <div class="hero-chip">🏠 Landmark #507 · 4BR/4BA</div>
+    <div class="hero-chip">✈️ DTW → DEN → Vail</div>
+    <div class="hero-chip">☀️ Late June — Peak Wildflower Season</div>
+  </div>
+  <div class="sun-bar">
+    <div class="sun-item">🌅 <span><strong>Sunrise</strong><br>~5:38–5:42 AM</span></div>
+    <div class="sun-item">🌇 <span><strong>Sunset</strong><br>~8:28–8:30 PM</span></div>
+    <div class="sun-item">☀️ <span><strong>Daylight</strong><br>~14 hrs 50 min</span></div>
+    <div class="sun-item">🌡 <span><strong>June Weather</strong><br>Town 70s°F · Summit 50s°F</span></div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-bar">
+  <button class="tab-btn active" onclick="switchTab('itinerary',this)">📅 Itinerary</button>
+  <button class="tab-btn" onclick="switchTab('map',this)">🗺 Map</button>
+  <button class="tab-btn" onclick="switchTab('gondolas',this)">🚡 Gondolas & Parks</button>
+  <button class="tab-btn" onclick="switchTab('tracking',this)">📊 Activity Tracker</button>
+  <button class="tab-btn" onclick="switchTab('eat',this)">🍽 Eat & Drink</button>
+  <button class="tab-btn" onclick="switchTab('info',this)">ℹ️ Essentials</button>
+  <button class="tab-btn" onclick="switchTab('grocery',this)">🛒 Grocery List</button>
+</div>
+
+<div class="main-wrap">
+<div class="action-row">
+  <button class="action-btn" onclick="window.print()">🖨 Print</button>
+  <button class="action-btn sec" onclick="expandAll()">↕ Expand All</button>
+  <button class="action-btn sec" onclick="collapseAll()">↕ Collapse All</button>
+</div>
+
+<!-- ==================== ITINERARY ==================== -->
+<div id="tab-itinerary" class="tab-pane active">
+
+  <!-- FLIGHTS (collapsible) -->
+  <div class="day-card" style="margin-bottom:14px;">
+    <div class="day-header" onclick="toggleDay(this)" style="background:#1a2e4a;">
+      <div style="font-size:1.6rem;font-weight:900;font-family:'Playfair Display',serif;color:#C49A3A;min-width:44px;">✈️</div>
+      <div class="day-info">
+        <div class="day-label">Delta · DTW ↔ DEN</div>
+        <div class="day-title">Flights — Jun 22 Outbound · Jun 29 Return</div>
+      </div>
+      <div class="day-badge" style="background:rgba(255,255,255,.1);">🛫 Flights</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="activity">
+        <div class="act-icon i-note">🛫</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Outbound · Mon Jun 22, 2026</span><span class="tag t-transit">Delta 1113</span></div>
+          <div class="hike-stats">
+            <div class="stat">🕗 Depart DTW ~8:30 AM ET</div>
+            <div class="stat">🕙 Arrive DEN ~9:38 AM MT</div>
+            <div class="stat">⏱ ~3h 8min direct</div>
+            <div class="stat">🏢 DTW: McNamara Terminal</div>
+          </div>
+          <p class="act-desc"><strong>Car Rental:</strong> Budget Minivan via Costco at DEN. Budget counter in the main terminal; follow rental car shuttle signs. Allow 30–45 min for pickup. <strong>Drive DEN → Vail:</strong> I-70 West · ~100 mi · ~1h 50m. Consider a grocery stop in Frisco (Exit 203, ~26 mi before Vail) — see Groceries section below.</p>
+          <div class="pro-tip"><strong>Arrival tip:</strong> Check-in at Landmark is after 4pm. With the ~9:38am DEN arrival + drive + grocery stop, you'll likely arrive in Vail by 1–2pm. Grab lunch at The Little Diner or explore Lionshead while waiting for check-in.</div>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🛬</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Return · Mon Jun 29, 2026</span><span class="tag t-transit">Delta 2787</span></div>
+          <div class="hike-stats">
+            <div class="stat">🕙 Depart DEN ~10:25 AM MT</div>
+            <div class="stat">🕑 Arrive DTW ~3:13 PM ET</div>
+            <div class="stat">⏱ ~2h 48min direct</div>
+            <div class="stat">🏢 DTW: McNamara Terminal M</div>
+          </div>
+          <p class="act-desc">Check out by 11am. Drive Vail → DEN is ~1h 50m — leave Vail by 7:00–7:30am to allow time for the drive, Budget return, and TSA. Return Budget minivan at DEN rental return facility (well-signed from I-70/Peña Blvd). TSA PreCheck recommended; McNamara Terminal security can be long on Mondays.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LODGING (collapsible) -->
+  <div class="day-card" style="margin-bottom:14px;">
+    <div class="day-header" onclick="toggleDay(this)" style="background:#2D5040;">
+      <div style="font-size:1.6rem;font-weight:900;font-family:'Playfair Display',serif;color:#C49A3A;min-width:44px;">🏠</div>
+      <div class="day-info">
+        <div class="day-label">610 W Lionshead Cir · Unit 507</div>
+        <div class="day-title">The Landmark Residences — Penthouse · 4BR/4BA</div>
+      </div>
+      <div class="day-badge" style="background:rgba(255,255,255,.1);">🗝 Lodging</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="activity">
+        <div class="act-icon i-note">🏠</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Unit 507 — Penthouse, 5th Floor</span><span class="tag t-tip">2,300 sq ft · Platinum-rated</span></div>
+          <div class="hike-stats">
+            <div class="stat">🛏 4 Bedrooms · Sleeps 9</div>
+            <div class="stat">🚿 4 Full Baths</div>
+            <div class="stat">🗓 Check-In: After 4:00 PM</div>
+            <div class="stat">🗓 Check-Out: By 11:00 AM</div>
+            <div class="stat">🅿️ Free underground garage</div>
+            <div class="stat">📞 (970) 476-1350</div>
+          </div>
+          <p class="act-desc"><strong>Bedding:</strong> Master — King + private bath · BR2 — Split King (converts to 2 twins) + bath · BR3 — Queen + private bath · BR4 — Captain bunks + futon twin pullout + gaming system + private bath. <strong>View:</strong> Balcony overlooking pool + Lionshead + Vail Mountain. <strong>A/C:</strong> Yes — central air conditioning. Full Wolf SS kitchen: range, Sub-Zero fridge, dishwasher, full cookware. Island seats 4, dining table for 10.</p>
+          <p class="act-desc" style="margin-top:6px;"><strong>Unit amenities:</strong> Stone gas fireplace · Wolf SS appliances + island (seats 4) · Dining for 10 · Home theater · Flat-screen TVs every room · Gaming system (bunk room) · In-unit W/D</p>
+          <p class="act-desc" style="margin-top:6px;"><strong>Property amenities:</strong> Heated outdoor pool · 3 hot tubs · Fire pit · Pickleball court (summer) · BBQ grills · Fitness center · Ski lockers · On-site convenience store · Front desk 8am–10pm</p>
+          <div class="act-links">
+            <a href="https://www.landmarkatvail.com" class="act-link" target="_blank">🌐 landmarkatvail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROCERIES -->
+  <div class="day-card" style="margin-bottom:20px;">
+    <div class="day-header" onclick="toggleDay(this)" style="background:#4A6741;">
+      <div style="font-size:1.6rem;font-weight:900;font-family:'Playfair Display',serif;color:#C49A3A;min-width:44px;">🛒</div>
+      <div class="day-info">
+        <div class="day-label">Stocking Up · DEN → Vail Route</div>
+        <div class="day-title">Grocery Stops — En Route + Near Vail</div>
+      </div>
+      <div class="day-badge" style="background:rgba(255,255,255,.1);">🥩 Groceries</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">📦 Non-Perishables — Stock Up En Route (I-70 Stops)</div>
+      <div class="activity">
+        <div class="act-icon i-note">🏪</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Walmart Supercenter — Frisco</span><span class="tag t-tip">I-70 Exit 203 · ~26 mi before Vail</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 840 Summit Blvd, Frisco, CO</div>
+            <div class="stat">🕐 Open daily 6am–11pm</div>
+            <div class="stat">🅿️ Free · Large lot</div>
+          </div>
+          <p class="act-desc">Best single-stop for everything — snacks, drinks, sunscreen, bug spray, first aid, trail food, paper goods, alcohol, and some fresh grocery. Huge selection at low prices. Right off I-70, easy in/out. Recommended for the bulk of your non-perishable stock-up on the drive in.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🌿</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Whole Foods Market — Frisco</span><span class="tag t-tip">I-70 Exit 203 · Same plaza as Walmart</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 Frisco (adjacent to Walmart)</div>
+            <div class="stat">🕐 Open daily · Typically 7am–10pm</div>
+          </div>
+          <p class="act-desc">Right next to Walmart in the same Frisco shopping area. Great for organic produce, specialty items, fresh-baked bread, good cheese selection, deli, and prepared foods for the drive. If you want quality over savings, do Whole Foods here and skip Walmart — they're steps apart. Liquor store also nearby.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🏬</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Safeway — Frisco</span><span class="tag t-tip">I-70 Exit 201 · Also near Frisco</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 Frisco Transit Center area</div>
+          </div>
+          <p class="act-desc">Another option in the Frisco cluster. Good for standard groceries if you want to split shopping between stores. Pharmacy on-site. Whole Foods + Safeway + Walmart are all within a 5-minute radius of each other in Frisco — efficient one-stop area.</p>
+        </div>
+      </div>
+      <div class="day-section-label">🥩 Perishables — In/Near Vail</div>
+      <div class="activity">
+        <div class="act-icon i-note">🏪</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">City Market — Vail</span><span class="tag t-tip">~1 mi from Landmark · Best overall</span><span class="must">Go Here First</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 2109 N Frontage Rd W, Vail</div>
+            <div class="stat">🕐 Open daily · Typically 6am–11pm</div>
+            <div class="stat">🚗 ~4 min drive from Landmark</div>
+          </div>
+          <p class="act-desc">The primary full-service grocery store serving Vail locals and visitors. Kroger-owned chain (similar to King Soopers). Good selection of fresh meat, produce, dairy, deli, and bakery. Has pharmacy. Comparable pricing to a standard supermarket — stock up on fresh food here for the week. Also has a decent selection of organic/Simple Truth products. Best option for perishables during your stay.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🛒</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Safeway — Vail</span><span class="tag t-tip">~1 mi from Landmark · Closest full grocery</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 2131 N Frontage Rd W, Vail</div>
+            <div class="stat">🕐 Daily 6:00 AM – 11:00 PM</div>
+            <div class="stat">🚗 ~3 min drive from Landmark</div>
+          </div>
+          <p class="act-desc">Yes, there is a Safeway right in Vail — even closer than City Market. Full grocery store with deli, bakery, butcher, pharmacy, and alcohol. Great for quick daily restocks. Slightly smaller selection than City Market but very convenient. Also accepts Apple Pay and offers grocery delivery in Vail.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🏬</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Walmart Supercenter — Avon</span><span class="tag t-tip">~15 min west · Largest store near Vail</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 171 Yoder Ave, Avon, CO</div>
+            <div class="stat">🕐 Open daily 6am–11pm · Pharmacy · Bakery · Deli</div>
+            <div class="stat">🚗 ~15 min west of Landmark via I-70</div>
+          </div>
+          <p class="act-desc">Full Supercenter — the largest store within easy driving distance of Vail. Good for restocking mid-week if you need a bigger shop. Has full grocery, deli, bakery, pharmacy, and liquor. Also useful on the drive home (in Avon/Exit 168 area) if you forget something before departing.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🏡</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Market at Vail (Village Market)</span><span class="tag t-tip">In Vail Village · Walk-to Option</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 Vail Village (walkable from Landmark)</div>
+            <div class="stat">🕐 Check local hours</div>
+          </div>
+          <p class="act-desc">Smaller specialty/gourmet market right in the Village. Good for quick daily pickups — fresh bread, snacks, beverages, forgotten items. More expensive than City Market but extremely convenient when you don't want to drive. Good cheese and deli selection. Good source for natural and gourmet products.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🧀</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">City Market — Avon</span><span class="tag t-tip">Murray's Cheese Shop · Best Cheese Selection</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 Avon · ~15 min west</div>
+            <div class="stat">🚗 I-70 Exit 167/168</div>
+          </div>
+          <p class="act-desc">The Avon City Market has a Murray's Cheese Shop outpost inside — widely considered the best cheese and specialty cheese selection in the Vail Valley. Also has good organic produce and Crystal Farm meats. Worth the drive if you want quality provisions for a nice evening meal in the condo.</p>
+        </div>
+      </div>
+      <div class="pro-tip" style="margin:12px 22px 16px;"><strong>Recommended plan:</strong> On arrival day (Jun 22), stop at <strong>Walmart + Whole Foods in Frisco</strong> (Exit 203, on the way from Denver) to load up on non-perishables, snacks, drinks, sunscreen, and trail supplies. Then swing by <strong>City Market in Vail</strong> for fresh/perishable items after check-in. Unit 507 has a full Wolf kitchen — cooking a few meals saves significant money compared to eating out every night in Vail.</div>
+    </div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">1</div>
+      <div class="day-info">
+        <div class="day-label">Mon Jun 22 · Arrival</div>
+        <div class="day-title">Fly In · Scenic Route Stops · Lionshead Explore</div>
+      </div>
+      <div class="day-badge">🛬 Travel Day</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">Morning — Travel</div>
+      <div class="activity">
+        <div class="act-icon i-note">✈️</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">DTW → DEN · Delta 1113 (Direct)</span><span class="tag t-transit">Flight</span></div>
+          <p class="act-desc">Detroit Metro (McNamara Terminal) → Denver International. Direct flight ~3 hrs. Confirm departure time with Delta.</p>
+          <div class="act-desc" style="margin-top:6px;"><strong>Car Rental:</strong> Budget Minivan via Costco at DEN. Budget counter in main terminal; follow signs for rental car shuttle. Confirm reservation # and Costco discount at pickup. Allow 30–45 min for rental process.</div>
+          <div class="act-desc" style="margin-top:6px;"><strong>Drive DEN → Vail:</strong> I-70 West · ~100 miles · ~1h 50m direct. Landing ~9:38am MT + 30–45 min rental = on road by ~10:30am. Check-in isn't until 4pm — perfect excuse to do two quick scenic stops on the way! See Route Stops below. Note: <em>mountain driving on I-70 requires full attention — steep grades, slow trucks</em>.</div>
+        </div>
+      </div>
+      <div class="day-section-label">📍 En-Route Stops — DEN → Vail in order (depart DEN ~10:30am MT)</div>
+      <div class="activity">
+        <div class="act-icon i-see">🏔</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Dillon Reservoir Overlook — Scenic Pulloff</span><span class="tag t-see">Stop 1 · Viewpoint</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 I-70 Exit 205 · Silverthorne area</div>
+            <div class="stat">🚗 ~1h 25min from DEN</div>
+            <div class="stat">🚗 ~30 min from Landmark (heading east)</div>
+            <div class="stat">⏰ 5–10 min stop · Free</div>
+          </div>
+          <p class="act-desc">Your first "wow, we're in Colorado" moment. Pull over at the marked I-70 scenic overlook near milepost 203 — panoramic turquoise Dillon Reservoir backed by the Tenmile Range. One of the best quick views on the entire I-70 corridor. Great first photo stop for the kids before continuing west.</p>
+        </div>
+      </div>
+            <div class="activity">
+        <div class="act-icon i-hike">🦌</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Rainbow Lake — Frisco</span><span class="tag t-hike">Stop 2 · Quick Hike</span><span class="must">Do This!</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 I-70 Exit 203 → Frisco</div>
+            <div class="stat">🚗 ~1h 30min from DEN · ~25 min from Landmark</div>
+            <div class="stat">📏 1.6 mi RT · 30–40 min</div>
+            <div class="stat">⬆️ 157 ft · Easy</div>
+            <div class="stat">💰 Free · Park at 2nd Ave &amp; S Cabin Green Dr</div>
+          </div>
+          <p class="act-desc">Perfect first hike for the trip — easy, beautiful, and right off I-70. Wide boardwalk-style trail through lodgepole pines and across small creek bridges to a scenic alpine lake. Common moose sightings. Kids can skip rocks at the lake. After the hike, grab groceries at Walmart + Whole Foods right here in Frisco (Exit 203) before continuing to Vail — it's the most efficient stock-up stop of the trip.</p>
+          <div class="fee-note"><strong>Free · No permit · Free parking at 2nd Ave &amp; S Cabin Green Dr, Frisco</strong></div>
+          <div class="act-links">
+            <a href="https://www.alltrails.com/trail/us/colorado/rainbow-lake" class="act-link" target="_blank">🥾 AllTrails</a>
+            <a href="https://www.townoffrisco.com/things-to-do/activities/hiking-running/" class="act-link" target="_blank">🌐 Town of Frisco</a>
+          </div>
+          <div class="pro-tip"><strong>Pro tip:</strong> Rainbow Lake → Walmart/Whole Foods grocery run → back on I-70. Takes ~1.5 hrs total. Arrive Vail by 1–2pm with time to explore before 4pm check-in.</div>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-see">🏞</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Officer's Gulch Pond — Roadside Stop</span><span class="tag t-see">Stop 3 · Scenic Stop</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 I-70 Exit 198 (between Frisco &amp; Copper Mtn)</div>
+            <div class="stat">🚗 ~1h 40min from DEN · ~18 min from Landmark (heading east)</div>
+            <div class="stat">📏 0.9 mi easy loop · 20–30 min</div>
+            <div class="stat">⬆️ 32 ft · Flat</div>
+            <div class="stat">💰 Free</div>
+          </div>
+          <p class="act-desc">A beautiful little gem right off I-70 — a picturesque pond framed by the Tenmile Range with a historic stone hut, bridge perfect for photos, ducks, and trout-filled water. Kids love tossing rocks and spotting wildlife. Takes just 20–30 minutes. Excellent picnic spot if you packed lunch. Exit 198 eastbound — look for signs.</p>
+          <div class="fee-note"><strong>Free · No permit · Easy highway pulloff · Fishing requires CO license (adults 16+)</strong></div>
+          <div class="act-links">
+            <a href="https://www.alltrails.com/trail/us/colorado/officers-gulch" class="act-link" target="_blank">🥾 AllTrails</a>
+          </div>
+        </div>
+      </div>
+<div class="day-section-label">Afternoon</div>
+      <div class="activity">
+        <div class="act-icon i-see">🏔</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Check In + Explore Lionshead</span><span class="tag t-see">Settle In</span></div>
+          <p class="act-desc">Check in at Landmark Front Desk (Check-in after 4pm). Unit 507 is on the 5th floor — elevator adjacent. Balcony overlooks pool and Vail Mountain — great first view for the kids. Take a short walk to Lionshead Village: Sunbird Park (555 E Lionshead Cir, <strong>rated one of the world's coolest playgrounds by Travel & Leisure</strong>, ~0.2 mi walk), Rocket Fizz candy shop, and Gore Creek Mini Golf at the base of the gondola.</p>
+          <div class="fee-note"><strong>No fee:</strong> Lionshead Village, Sunbird Park, and walking areas are free. Gore Creek Mini Golf has a small fee.</div>
+        </div>
+      </div>
+      <div class="day-section-label">Evening — Dinner Options (Arrival Night)</div>
+      <div class="activity">
+        <div class="act-icon i-food">🍽</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Dinner Tonight — Easy Arrival Night</span><span class="tag t-food">See Eat &amp; Drink Tab</span></div>
+          <p class="act-desc">Keep it simple after a travel day — everything is walkable from the Landmark. Tonight's picks:</p>
+          <div class="hike-stats">
+            <div class="stat">🍕 Pizza / Easiest: <strong>Blue Moose Pizza</strong> (~3 min walk W · Lionshead patio · kids draw on tablecloths · Daily 11am–9pm)</div>
+            <div class="stat">⚡ Quick Bite: <strong>Garfinkel's (Garfs)</strong> (~3 min walk W · sunny deck · elk Mountain Dog + chicken fingers Kids Cafe · call to confirm open: 970-476-3789)</div>
+            <div class="stat">🍳 Casual Sit-Down: <strong>Bully Ranch</strong> (~10 min walk E · Vail Village patio · Wagyu burger · Kids Cafe menu · Daily 11am–10pm)</div>
+            <div class="stat">🍝 Italian: <strong>La Nonna Vail</strong> (~10 min walk E · Mon–Sat 5–9pm · handmade pasta · classic and family-welcoming)</div>
+            <div class="stat">🏠 In Condo: <strong>Cook a simple meal</strong> — full Wolf kitchen, grocery stock from Frisco stop · perfect if kids are tired from travel day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">2</div>
+      <div class="day-info">
+        <div class="day-label">Tue Jun 23 · Acclimate Day</div>
+        <div class="day-title">Eagle Bahn Gondola · Epic Discovery · Pirate Ship Park</div>
+      </div>
+      <div class="day-badge">🚡 Mountain Fun</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-label">☀️ Breakfast / Coffee — Optional</div>
+      <div class="activity">
+        <div class="act-icon i-food">☕</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Morning Fuel Options</span><span class="tag t-tip">Optional · See Eat &amp; Drink Tab</span></div>
+          <div class="hike-stats">
+            <div class="stat">🍳 Must-Try: <strong>The Little Diner</strong> · Daily 7–2pm, last seating 1:45pm · ~3 min walk W</div>
+            <div class="stat">☕ Coffee: <strong>Yeti's Grind</strong> · Daily 7am–6pm · ~8 min walk</div>
+            <div class="stat">🥐 Grab & Go: <strong>The Belle</strong> · Daily 7am–3pm · ~2 min walk W (Lionshead)</div>
+          </div>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-act">🚡</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Eagle Bahn Gondola + Epic Discovery</span><span class="tag t-act">Activity</span><span class="must">Must Do</span></div>
+          <div class="hike-stats">
+            <div class="stat">🚶 ~2 min walk from Landmark</div>
+            <div class="stat">📅 Jun 13–Sept 1, 2025 · Daily 9:30am–4pm</div>
+            <div class="stat">⏰ 3–4 hours</div>
+          </div>
+          <p class="act-desc">Ride the Eagle Bahn Gondola (#19) from right next to the Landmark — vertical rise 2,125 ft, 8 min ride. Epic Discovery at Eagle's Nest: Forest Flyer Mountain Coaster (thrilling for ages 6–9), Marmot Mini Kids Tubing (gentle, great for little ones), Little Eagle Kids Zipline (10 ft high — confidence-builder), Bungee Trampoline, 35-ft Climbing Wall, and Nature Discovery Center (giant yurt with animal displays, puzzles, trivia — great for all ages). Eagle's Loop trail (1 mi, minimal elevation) is the perfect post-ride family walk for gorgeous wildflower views atop the mountain.</p>
+          <div class="fee-note"><strong>Cost:</strong> ~$50/adult scenic ride (kids 12 & under ride FREE with each adult ticket). Adventure Pass (gondola + all activities) recommended if spending the full morning. Purchase at Lionshead ticket office or online at vail.com. Note: Epic Passholders get free scenic rides.</div>
+          <div class="act-links">
+            <a href="https://www.vail.com/explore-the-resort/activities-and-events/summer/epic-discovery.aspx" class="act-link" target="_blank">🌐 Epic Discovery Info</a>
+          </div>
+          <div class="pro-tip"><strong>Pro tip:</strong> Jacket required — it's 10–15°F cooler at the summit. Closed-toe shoes mandatory for all activities. Buy Adventure Pass online to save time. June 22 is only 2 days after the summer solstice — incredible late-evening golden light if you go up near closing.</div>
+        </div>
+      </div>
+      <div class="day-section-label">Afternoon</div>
+      <div class="activity">
+        <div class="act-icon i-see">🏴‍☠️</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Pirate Ship Playground (Pirateship Park)</span><span class="tag t-see">Explore</span><span class="must">Kid Favorite</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 9 Hanson Ranch Rd, Vail Village</div>
+            <div class="stat">🚶 ~10 min walk from Landmark (via free shuttle or stroll)</div>
+            <div class="stat">💰 FREE</div>
+          </div>
+          <p class="act-desc">Custom-designed by artist Ty Gillespie — the iconic pirate ship playground in the heart of Vail Village, near Gondola One. Dragon, cockboat, bowsprit, lookout mast, portholes, climbing walls, nets, cannons, treasure chests, lifeboats — a full nautical world for kids ages 1–9. A babbling Gore Creek runs nearby for splashing. The Landmark website itself calls it a must: <em>"every child should experience the magic of this custom-built playground."</em> Great pre-dinner energy burner.</p>
+          <div class="fee-note"><strong>No fee · No registration needed</strong> · Open year-round. Dogs on leash allowed. Note: toddlers need adult help reaching some upper structures.</div>
+        </div>
+      </div>
+      <div class="day-section-label">Evening — Dinner Options</div>
+      <div class="activity">
+        <div class="act-icon i-food">🍽</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Dinner Tonight — Post Epic Discovery</span><span class="tag t-food">See Eat &amp; Drink Tab</span></div>
+          <p class="act-desc">Easy walk from Lionshead into Vail Village. Tonight's picks by mood:</p>
+          <div class="hike-stats">
+            <div class="stat">🍹 Happy Hour (3–6pm): <strong>Sweet Basil</strong> bar (no deposit, first-come) · <strong>Mountain Standard</strong> · <strong>Root &amp; Flower</strong> (5–6pm, 50% off cocktails) · All ~10 min walk E</div>
+            <div class="stat">🍕 Pizza / Casual: <strong>Blue Moose Pizza</strong> (~3 min walk W, patio, kids draw on tablecloths) · <strong>Bully Ranch</strong> (patio, Wagyu burger, Kids Cafe) · ~10 min walk E</div>
+            <div class="stat">🍷 Upscale: <strong>Sweet Basil</strong> (Michelin, reserve at exploretock.com) · <strong>Mountain Standard</strong> (wood-fire, reserve at opentable.com)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">3</div>
+      <div class="day-info">
+        <div class="day-label">Wed Jun 24 · Waterfall Hike</div>
+        <div class="day-title">Booth Falls Trail · Afternoon Play · Vail Village</div>
+      </div>
+      <div class="day-badge">🥾 Big Hike</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">Morning — Start Early</div>
+      <div class="day-section-label">☀️ Breakfast / Coffee — Optional</div>
+      <div class="activity">
+        <div class="act-icon i-food">☕</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Morning Fuel Options</span><span class="tag t-tip">Optional · See Eat &amp; Drink Tab</span></div>
+          <div class="hike-stats">
+            <div class="stat">🥐 Quick / Pack It: <strong>The Belle or Yeti's Grind</strong> · Grab coffee + pastry before 7am bus to Booth Falls · ~2–8 min walk</div>
+            <div class="stat">🍳 Sit-Down (if time): <strong>The Little Diner</strong> · Opens 7am · Go early before the trail · ~3 min walk W</div>
+            <div class="stat">🏠 In Condo: <strong>Cook breakfast</strong> · Full Wolf kitchen — eggs, granola, fruit from grocery stock · On-site</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="act-icon i-hike">🥾</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Booth Falls Trail</span><span class="tag t-hike">Hike</span><span class="must">Must Do</span></div>
+          <div class="hike-stats">
+            <div class="stat">📏 4.7 mi RT (from shuttle stop)</div>
+            <div class="stat">⬆️ 1,440 ft gain</div>
+            <div class="stat">⏰ 2.5–3 hrs (to falls & back)</div>
+            <div class="stat">🚌 ~15 min from Landmark via East Vail bus</div>
+            <div class="stat">🏔 Eagles Nest Wilderness</div>
+          </div>
+          <p class="act-desc">Most popular hike in the Vail area and for good reason. Steady climb through spectacular aspen groves and sandstone formations along Booth Creek to a 60-ft waterfall. Starting elevation 9,397 ft. The waterfall at mile 2 is the perfect turnaround for families with young kids — great rocks for scrambling and splashing. Well-marked trail. Older kids (6–9) will be captivated by the creek and boulders along the way.</p>
+          <p class="act-desc" style="margin-top:6px;"><strong>Trailhead access (no car parking as of 2025):</strong> Park at Gore Creek or Red Sandstone parking garage, then take the free East Vail bus from Vail Transportation Center (free, frequent service). Restrooms at trailhead. Target 7–8am start to beat crowds.</p>
+          <div class="fee-note"><strong>No trail fee · Free bus · Eagles Nest Wilderness overnight permits required for camping (day hike is free)</strong></div>
+          <div class="act-links">
+            <a href="https://www.alltrails.com/trail/us/colorado/booth-falls-trail" class="act-link" target="_blank">🥾 AllTrails</a>
+            <a href="https://followtiffsjourney.com/booth-falls/" class="act-link" target="_blank">📖 Full Guide</a>
+          </div>
+          <div class="pro-tip"><strong>Pro tip:</strong> Carry the 1-year-old in a backpack carrier. Bring a picnic for the waterfall rocks — great spot to eat lunch before heading back. Start at over 9,400 ft — take first 20 min slowly and drink lots of water. Late June means you're close to peak wildflower timing for this area.</div>
+        </div>
+      </div>
+      <div class="day-section-label">Afternoon — Choose Your Wind-Down</div>
+      <div class="activity">
+        <div class="act-icon i-act">🏊</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Landmark Pool + Hot Tubs</span><span class="tag t-act">Option A · Relax</span><span class="must">Steps Away</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 610 W Lionshead Cir — on-site at Landmark</div>
+            <div class="stat">🚶 Steps from Unit 507 balcony</div>
+            <div class="stat">💰 FREE for guests</div>
+          </div>
+          <p class="act-desc">After a big morning hike, the easiest and most rewarding option — the Landmark's heated outdoor pool, 3 hot tubs, and fire pit right outside your door. Perfect recovery for tired legs and a great way to keep the little ones entertained without going anywhere. The balcony overlooks the pool deck — you can even keep an eye on kids from the condo.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-see">🪺</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Sunbird Park + Splash Pad</span><span class="tag t-see">Option B · Play</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 555 E Lionshead Cir · Lionshead Village</div>
+            <div class="stat">🚶 ~2 min walk from Landmark</div>
+            <div class="stat">💰 FREE</div>
+          </div>
+          <p class="act-desc">Steps from the Landmark — Sunbird Park's unique bird's-nest climbing structures (named one of the world's coolest playgrounds by Travel & Leisure) plus the adjacent splash pad area in Lionshead Square. Perfect for burning off post-hike energy for kids ages 1–9. The 1-year-old will love the water features while older kids climb and play. Grab a gelato at Rimini Gelato (~2 min walk) on the way back.</p>
+          <div class="fee-note"><strong>Free · No registration · Open daily</strong></div>
+        </div>
+      </div>
+      <div class="day-section-label">Evening — Dinner Options</div>
+      <div class="activity">
+        <div class="act-icon i-food">🍽</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Dinner Tonight — Post Booth Falls</span><span class="tag t-food">See Eat &amp; Drink Tab</span></div>
+          <p class="act-desc">You earned a great dinner after Booth Falls. Tonight's picks by mood:</p>
+          <div class="hike-stats">
+            <div class="stat">🍹 Happy Hour (3–5pm): <strong>Sweet Basil</strong> bar seats (first-come, no deposit) · <strong>Mountain Standard</strong> · <strong>The George</strong> (5–6pm, $5 drinks + $10.75 starters) · ~10 min walk E</div>
+            <div class="stat">🍕 Casual: <strong>Blue Moose Pizza</strong> (~3 min walk W) · <strong>La Nonna</strong> (Wed open, handmade pasta) · <strong>Bully Ranch</strong> (patio, wagyu burger, Kids Cafe)</div>
+            <div class="stat">🍷 Upscale — Optional: <strong>Sweet Basil</strong> (Michelin, reserve exploretock.com · $25/pp deposit) · <strong>Mountain Standard</strong> (wood-fire, opentable.com) · Both ~10 min walk E</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">4</div>
+      <div class="day-info">
+        <div class="day-label">Thu Jun 25 · Ford Park + Berrypicker Day</div>
+        <div class="day-title">Berrypicker Trail · Betty Ford Gardens · Ford Park · GRF Amphitheater</div>
+      </div>
+      <div class="day-badge">🌸 Wildflowers</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-label">☀️ Breakfast / Coffee — Optional</div>
+      <div class="activity">
+        <div class="act-icon i-food">☕</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Morning Fuel Options</span><span class="tag t-tip">Optional · See Eat &amp; Drink Tab</span></div>
+          <div class="hike-stats">
+            <div class="stat">🍳 Early Sit-Down: <strong>The Little Diner</strong> · Opens 7am — eat before 8am start for Berrypicker · ~3 min walk W</div>
+            <div class="stat">🥐 Grab & Go: <strong>The Belle</strong> · Quick espresso + croissant on the way to the gondola base · ~2 min walk W</div>
+            <div class="stat">☕ Coffee: <strong>Yeti's Grind</strong> · Best coffee in Vail — open 7am · ~8 min walk to Vail Village</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="act-icon i-hike">🥾</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Berrypicker Trail</span><span class="tag t-hike">Hike</span><span class="must">Must Do</span></div>
+          <div class="hike-stats">
+            <div class="stat">📏 3.4 mi one-way (hike up, gondola down)</div>
+            <div class="stat">⬆️ 2,230 ft gain</div>
+            <div class="stat">⏰ 3–4.5 hrs up · Gondola FREE down</div>
+            <div class="stat">🚶 ~5 min walk W from Landmark (Lionshead base)</div>
+            <div class="stat">💰 Free to hike up · Gondola FREE down for hikers (9:30am–4pm)</div>
+          </div>
+          <p class="act-desc">One of Vail's classic hikes — starts right at the Lionshead gondola base and climbs through stunning aspen groves and wildflower meadows to Eagle's Nest. Trail is shared with mountain bikers — stay right and listen for bells. At the top: panoramic mountain views, Nature Discovery Center yurt, and the gondola ride down is FREE for hikers. A uniquely satisfying Vail experience.</p>
+          <div class="fee-note"><strong>Free to hike up · Gondola FREE down for hikers Jun 13–Sept 1 (9:30am–4pm) · Free summer parking at Lionshead structure</strong></div>
+          <div class="act-links">
+            <a href="https://www.alltrails.com/trail/us/colorado/berrypicker-trail" class="act-link" target="_blank">🥾 AllTrails</a>
+            <a href="https://jesswandering.com/the-best-things-to-do-in-vail-colorado-during-the-summer/" class="act-link" target="_blank">📖 Jess Wandering</a>
+          </div>
+          <div class="pro-tip"><strong>Pro tip:</strong> Start by 8am — it's a significant climb and gets warm. Younger kids or tired legs → take gondola UP and hike the Eagles Loop (1 mi flat) instead. Ride gondola back down either way.</div>
+        </div>
+      </div>
+      <div class="day-section-label">Afternoon</div>
+      <div class="activity">
+        <div class="act-icon i-see">🌺</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Betty Ford Alpine Gardens + Ford Park Playground</span><span class="tag t-see">Explore</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 530 S Frontage Rd E (Ford Park)</div>
+            <div class="stat">🚶 ~12 min walk E from Landmark</div>
+            <div class="stat">💰 Free</div>
+          </div>
+          <p class="act-desc">After the Berrypicker, unwind at Ford Park — a beautiful 1.5-hr afternoon. Stroll the Betty Ford Alpine Gardens (highest botanical garden in North America, great educational signage for kids, peak late-June bloom). Then let the kids loose at Ford Park Playground — large play structures, picnic shelter, restrooms, and Gore Creek wading access right next to the gardens.</p>
+          <div class="fee-note"><strong>Both completely free · No registration needed</strong></div>
+          <div class="act-links">
+            <a href="https://www.bettyfordalpinegardens.org" class="act-link" target="_blank">🌐 Betty Ford Gardens</a>
+          </div>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-act">🎵</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Gerald R. Ford Amphitheater — Free Concert</span><span class="tag t-act">Activity</span><span class="must">Thu Jun 26 Bonus!</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 Ford Park · Adjacent to Betty Ford Gardens</div>
+            <div class="stat">🎸 Jimmy Buffett cover band · Tue Jun 23 at 6:30pm</div>
+            <div class="stat">🎶 Paid orchestra concerts Jun 25, 27, 28 audible FREE from lawn</div>
+            <div class="stat">💰 Free lawn access at Ford Park</div>
+          </div>
+          <p class="act-desc">The Gerald R. Ford Amphitheater hosts free and ticketed concerts all summer. Free lawn seating in Ford Park lets you hear the paid orchestral concerts without a ticket — great family picnic setup. If the Jimmy Buffett cover band timing works (Tue Jun 23, 6:30pm), that's a separate free show worth catching. Check the calendar for your exact dates.</p>
+          <div class="fee-note"><strong>Free lawn seating at Ford Park · Ticketed concerts audible from outside</strong></div>
+          <div class="act-links">
+            <a href="https://www.vailgfa.com/calendar/" class="act-link" target="_blank">📅 GFA Calendar</a>
+          </div>
+        </div>
+      </div>
+      <div class="day-section-label">Evening — Dinner Options</div>
+      <div class="activity">
+        <div class="act-icon i-food">🍽</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Dinner Tonight — Ford Park Area</span><span class="tag t-food">See Eat &amp; Drink Tab</span></div>
+          <p class="act-desc">You're already near Vail Village after Betty Ford Gardens and the amphitheater. Tonight's picks:</p>
+          <div class="hike-stats">
+            <div class="stat">🍹 Happy Hour: <strong>The Fitz Bar</strong> (4–5pm, $1 off drafts), <strong>The George</strong> (5–6pm, $5 you-call-it)</div>
+            <div class="stat">🍕 Pizza / Casual: <strong>Blue Moose Pizza</strong>, <strong>La Nonna</strong> (Mon–Sat)</div>
+            <div class="stat">🍷 Upscale: <strong>Alpenrose</strong> ⭐ <span class="must">Must Try</span> (Thu–Sun, fondue + raclette cooked at your table — great with kids · ~8 min walk E)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">5</div>
+      <div class="day-info">
+        <div class="day-label">Fri Jun 26 · Wildflower Ridge</div>
+        <div class="day-title">Shrine Ridge Trail · Nottingham Lake · Dinner Options</div>
+      </div>
+      <div class="day-badge">🌸 Wildflowers</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">Morning — Leave Early</div>
+      <div class="day-section-label">☀️ Breakfast / Coffee — Optional</div>
+      <div class="activity">
+        <div class="act-icon i-food">☕</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Morning Fuel Options</span><span class="tag t-tip">Optional · See Eat &amp; Drink Tab</span></div>
+          <div class="hike-stats">
+            <div class="stat">🏠 Recommend: Pack It: <strong>Condo breakfast + trail snacks</strong> · Leaving early for Shrine Ridge — eat quick in condo, pack lunch · On-site</div>
+            <div class="stat">🥐 If Time: <strong>The Belle</strong> · Grab coffee + breakfast burrito on the way out · ~2 min walk W · open 7am</div>
+            <div class="stat">🍳 Post-Hike Brunch: <strong>Westside Cafe</strong> · Daily 7am–3pm — great after Shrine Ridge · ~5 min drive W</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="act-icon i-hike">🥾</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Shrine Ridge Trail</span><span class="tag t-hike">Hike</span><span class="must">Must Do</span></div>
+          <div class="hike-stats">
+            <div class="stat">📏 4.6 mi RT</div>
+            <div class="stat">⬆️ 1,043 ft gain</div>
+            <div class="stat">⏰ 2–2.5 hrs</div>
+            <div class="stat">🚗 ~18 mi from Landmark (~25 min drive)</div>
+            <div class="stat">🅿️ Free parking at Shrine Pass TH</div>
+          </div>
+          <p class="act-desc">Located between Vail Pass and Copper Mountain — take I-70 Exit 190 (Vail Pass Summit), follow signs for Shrine Pass Road (~2.3 mi on good dirt road, SUV preferred). Trail begins at obvious parking area with vault toilet. Winds through open pine meadows past two small ponds and up to spectacular Shrine Ridge at 11,745 ft — panoramic views of the Gore Range, Sawatch Range, and a direct sightline to Mount of the Holy Cross. Late June is right at the start of wildflower season here — columbines, paintbrush, and lupine will be emerging.</p>
+          <div class="fee-note"><strong>No fee · No permit required · Free parking (arrive by 8am — lot fills)</strong>. No cell service at trailhead — download AllTrails map offline first.</div>
+          <div class="act-links">
+            <a href="https://www.alltrails.com/trail/us/colorado/shrine-ridge-trail" class="act-link" target="_blank">🥾 AllTrails</a>
+            <a href="https://knownothingnomads.com/shrine-ridge-trail-a-wildflower-paradise/" class="act-link" target="_blank">📖 Wildflower Guide</a>
+          </div>
+          <div class="pro-tip"><strong>Pro tip:</strong> Afternoon thunderstorms are common by noon–1pm at this elevation — plan to be off the exposed ridge by then. June 26 morning should give excellent clear conditions. Kids ages 6–9 will love the open meadows for running around. Easy to turn back early if the 1-year-old gets tired.</div>
+        </div>
+      </div>
+      <div class="day-section-label">Afternoon</div>
+      <div class="activity">
+        <div class="act-icon i-act">🏄</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Nottingham Lake — SUP or Kayak (Avon)</span><span class="tag t-act">Activity</span></div>
+          <div class="hike-stats">
+            <div class="stat">🚗 ~15 min west of Landmark (Avon)</div>
+            <div class="stat">💰 Rentals available on-site</div>
+          </div>
+          <p class="act-desc">Beautiful flat-water lake in Avon with incredible views of the Vail Valley and Gore Range backdrop. Great for beginners and kids — calm water, no current. Rentals and lessons via Stand Up Paddle Colorado. Perfect relaxed afternoon after the morning ridge hike.</p>
+          <div class="fee-note"><strong>Rental fee applies (hourly rate) · No reservation required · PFDs included</strong></div>
+        </div>
+      </div>
+      <div class="day-section-label">Evening — Dinner Options</div>
+      <div class="activity">
+        <div class="act-icon i-food">🍽</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Dinner Tonight — Post Shrine Ridge + Lake</span><span class="tag t-food">See Eat &amp; Drink Tab</span></div>
+          <p class="act-desc">Long active day — keep it easy or treat yourselves. Tonight's picks for a Friday in Vail:</p>
+          <div class="hike-stats">
+            <div class="stat">🍹 Happy Hour: <strong>Root &amp; Flower</strong> (5–6pm, Huckleberry cocktails 50% off) · <strong>The George</strong> (5–6pm, $5 you-call-it + $10.75 starters) · Both ~10 min walk E</div>
+            <div class="stat">🍕 Pizza / Casual: <strong>Blue Moose Pizza</strong> (~3 min walk W) · <strong>La Nonna</strong> (Fri open, handmade pasta, ~10 min walk E)</div>
+            <div class="stat">🍷 Upscale: <strong>Mountain Standard</strong> (wood-fire Michelin, reserve at opentable.com) · <strong>Sweet Basil</strong> (reserve at exploretock.com) · Both ~10 min walk E</div>
+            <div class="stat">🇨🇭 Special: <strong>Swiss Chalet</strong> (Fri open, fondue + raclette cooked at your table, Wine Spectator) · ~10 min walk E · sonnenalp.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- DAY 6 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">6</div>
+      <div class="day-info">
+        <div class="day-label">Sat Jun 27 · Day Trip</div>
+        <div class="day-title">Breckenridge Day · Free BreckConnect Gondola + Activities</div>
+      </div>
+      <div class="day-badge">🏔 Breck Day</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-label">☀️ Breakfast / Coffee — Optional</div>
+      <div class="activity">
+        <div class="act-icon i-food">☕</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Morning Fuel Options</span><span class="tag t-tip">Optional · See Eat &amp; Drink Tab</span></div>
+          <div class="hike-stats">
+            <div class="stat">🏠 Recommend: Pack It: <strong>Condo breakfast</strong> · Early Breck departure — eat at condo, pack lunches for the drive · On-site</div>
+            <div class="stat">🍟 En Route Breck: <strong>Soupz On (Breckenridge)</strong> · Lunch spot in Breck · Main St · Budget-friendly deli + soups · ~40 min drive W</div>
+            <div class="stat">☕ Coffee Stop: <strong>Yeti's Grind or The Belle</strong> · Quick coffee before loading up · ~2–8 min walk</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="act-icon i-note">🚗</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Drive to Breckenridge</span><span class="tag t-transit">Transit</span></div>
+          <p class="act-desc">Landmark → Breckenridge: ~45 min (I-70 E to Exit 203, south on Hwy 9). Breckenridge is a charming historic mining town at 9,600 ft elevation — Colorado's best-preserved Victorian mountain town. Leave by 8–9am to maximize the day.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-act">🚡</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">BreckConnect Gondola</span><span class="tag t-act">Gondola</span><span class="must">Free!</span></div>
+          <div class="hike-stats">
+            <div class="stat">📍 170 Watson Ave, Breckenridge</div>
+            <div class="stat">📅 Mid-June–Labor Day · Daily 9:30am–5:30pm</div>
+            <div class="stat">💰 100% FREE for all riders</div>
+            <div class="stat">⏰ 13 min ride · 7,592 ft long</div>
+          </div>
+          <p class="act-desc">One of the best free mountain activities in Colorado — the BreckConnect Gondola connects downtown Breckenridge to the base of Peak 8 with stunning views of Cucumber Gulch and the Tenmile Range. Stops: Breckenridge Station → Shock Hill → Peak 7 → Peak 8 Base Camp. No ticket, no reservation — just walk on. 121 gondola cars, up to 8 passengers each. At Peak 8: hiking, on-mountain dining at Ski Hill Grill, scenic chairlift rides ($), and the Gold Runner Alpine Coaster.</p>
+          <div class="fee-note"><strong>Gondola itself FREE · On-mountain activities (alpine coaster, ropes course) have separate fees</strong> — purchase at breckenridge.com or ticket office. Summit Stage free public bus connects from Frisco/Dillon area.</div>
+          <div class="act-links">
+            <a href="https://www.breckenridge.com" class="act-link" target="_blank">🌐 Breckenridge.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="day-section-label">Late Morning — Options After Gondola</div>
+      <div class="activity">
+        <div class="act-icon i-act">🎯</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Post-Gondola Activity Options</span><span class="tag t-act">Pick Your Adventure</span></div>
+          <p class="act-desc">After the free gondola ride, the day opens up. Pick what the family has energy for — or combine a couple:</p>
+          <div class="hike-stats">
+            <div class="stat">🦌 Optional Hike: <strong>Rainbow Lake (Frisco)</strong> — 1.6 mi RT easy, 157 ft, 40 min · Free · If you skipped it on arrival day, this is your do-over · Park at 2nd Ave &amp; S Cabin Green Dr, Frisco · ~10 min from gondola</div>
+            <div class="stat">🌲 Hike: <strong>Aspen Alley</strong> — 2.9 mi, 531 ft, ~1.5–2 hrs · Dense aspen grove singletrack · Lower TH at Old Sawmill Museum or town shuttle · ~5 min from gondola</div>
+            <div class="stat">🧌 Easy Walk: <strong>Breckenridge Troll (Isak Heartstone)</strong> — 1.2 mi RT, 30–45 min, Free · Huge wooden troll built from recycled materials · Major kid hit · Start at Stephen C. West Ice Arena · ~5 min drive from gondola</div>
+            <div class="stat">🎢 Activity: <strong>Gold Runner Alpine Coaster + Alpine Slide</strong> (Breck Epic Discovery) — thrilling mountain coasters accessible via free gondola · Buy combo pass at gobreck.com</div>
+            <div class="stat">🧗 Activity: <strong>Peak 8 Zipline or Rock Wall</strong> (Breck Epic Discovery) — ziplines + a climbing wall at the gondola top · Combo passes available</div>
+            <div class="stat">🛍 Explore: <strong>Main Street Breckenridge</strong> — historic Victorian mining town, boutique shops, toy stores, ice cream · Free to wander · Kids love the quirkiness</div>
+          </div>
+          <div class="act-links">
+            <a href="https://www.alltrails.com/trail/us/colorado/rainbow-lake" class="act-link" target="_blank">🥾 Rainbow Lake AllTrails</a>
+            <a href="https://www.alltrails.com/trail/us/colorado/aspen-alley" class="act-link" target="_blank">🌲 Aspen Alley AllTrails</a>
+            <a href="https://gobreck.com/plan-your-visit/breckenridge-ski-resort/epic-discovery/" class="act-link" target="_blank">🎢 Breck Epic Discovery</a>
+          </div>
+        </div>
+      </div>
+      <div class="day-section-label">Afternoon — Breckenridge Town</div>
+      <div class="activity">
+        <div class="act-icon i-see">🏘</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Breckenridge Main Street</span><span class="tag t-see">Explore</span></div>
+          <p class="act-desc">Walk historic Main Street (Colorado's largest National Historic District). Great shops, ice cream, and a lively mountain-town atmosphere. Kids will love the creek, open spaces, and quirky shops. Carter Park Playground is a great option with a fantastic alpine view.</p>
+        </div>
+      </div>
+      <div class="day-section-label">Evening — Back in Vail</div>
+      <div class="activity">
+        <div class="act-icon i-food">🍷</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Mountain Standard</span><span class="tag t-food">Dinner</span></div>
+          <p class="act-desc">193 Gore Creek Dr, Vail · ~10 min walk. Farm-to-table American cuisine, top-rated in Vail. Great for a Saturday dinner out. Reservations recommended — <a href="https://www.mountainstandardvail.com" target="_blank">mountainstandardvail.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- DAY 7 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">7</div>
+      <div class="day-info">
+        <div class="day-label">Sun Jun 28 · Flex Day</div>
+        <div class="day-title">Your Choice Day · Gore Creek · Pool · Dinner</div>
+      </div>
+      <div class="day-badge">🎯 Choose</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">☀️ Breakfast / Coffee — Optional</div>
+      <div class="activity">
+        <div class="act-icon i-food">☕</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Morning Fuel Options</span><span class="tag t-tip">Optional · See Eat &amp; Drink Tab</span></div>
+          <div class="hike-stats">
+            <div class="stat">🍳 Leisurely: <strong>The Little Diner</strong> · Daily 7am–2pm · Last full day — enjoy a proper sit-down breakfast · ~3 min walk W</div>
+            <div class="stat">☕ Casual: <strong>Yeti's Grind</strong> · Specialty latte + avocado toast on Gore Creek patio · ~8 min walk E</div>
+            <div class="stat">🍳 Local Fave: <strong>Westside Cafe</strong> · All-day breakfast + lunch · Daily 7am–3pm · ~5 min drive W</div>
+          </div>
+        </div>
+      </div>
+      <div class="day-section-label">🎯 Morning / Afternoon — Your Choice (Last Full Day)</div>
+      <div class="activity">
+        <div class="act-icon i-act">🎯</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Choose Your Own Adventure</span><span class="tag t-act">Flex Day</span></div>
+          <p class="act-desc">Day 7 is intentionally open — pick what the family has energy for after 6 packed days. Ideas by type:</p>
+          <div class="hike-stats">
+            <div class="stat">🥾 Easy Hike: <strong>Fireweed Loop</strong> — gondola up, easy 1.5 mi alpine wildflower stroll, gondola FREE down · ~2 min walk W to Eagle Bahn</div>
+            <div class="stat">🥾 Hike: <strong>Strawberry Lane / Berrypicker Loop</strong> — Kelly's kids-tested 3.6 mi loop from Pirate Playground · ~5 min walk W</div>
+            <div class="stat">🥾 Easy Walk: <strong>Gore Valley Trail</strong> — flat, paved, creek wading, any length · Steps from Landmark</div>
+            <div class="stat">⛳ Activity: <strong>Gore Creek Mini Golf</strong> — base of Eagle Bahn gondola, all ages, ~45 min · ~2 min walk W · Small fee</div>
+            <div class="stat">🎮 Activity: <strong>Rabbit Hole Arcade at Chasing Rabbits</strong> — Pac-Man, Skee-Ball, air hockey, neon arcade · ~8 min walk E · 141 E Meadow Dr</div>
+            <div class="stat">🚡 Activity: <strong>Eagle Bahn Gondola + Eagles Loop</strong> — 1 mi flat summit loop, wildflower views · ~2 min walk W to gondola</div>
+            <div class="stat">🏊 Relax: <strong>Landmark Pool + Hot Tubs</strong> — heated pool, 3 hot tubs, fire pit · On-site</div>
+            <div class="stat">💆 Wellness: <strong>Sonnenalp Spa</strong> — massage, facial, oxygen bar for altitude · ~10 min walk E · Book: (970) 479-5404</div>
+            <div class="stat">🌸 See: <strong>Vail Village Farmers Market</strong> (Saturdays) — boutique shops, fresh produce, mountain vibe · ~8 min walk E</div>
+          </div>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-act">🏊</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Landmark Pool + Hot Tubs</span><span class="tag t-act">Afternoon Relax</span></div>
+          <p class="act-desc">Heated outdoor pool, 3 hot tubs, fire pit, and pickleball — all from Unit 507's balcony. Perfect end to the last full day.</p>
+        </div>
+      </div>
+      <div class="day-section-label">Evening — Last Full Night Dinner</div>
+      <div class="activity">
+        <div class="act-icon i-food">🍽</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Dinner Tonight — Last Full Night</span><span class="tag t-food">See Eat &amp; Drink Tab</span></div>
+          <p class="act-desc">Make the last dinner count. Tonight's picks for a Sunday in Vail:</p>
+          <div class="hike-stats">
+            <div class="stat">🇨🇭 Unique / Special: <strong>Swiss Chalet</strong> (fondue + raclette at your table, Sun open) · ~10 min walk E</div>
+            <div class="stat">🏔 Alpine: <strong>Alpenrose Vail</strong> (Thu–Sun, Spätzle + fondue, long family tables) · ~8 min walk</div>
+            <div class="stat">🍕 Easy: <strong>Blue Moose Pizza</strong> (~3 min walk W) or cook in the Wolf kitchen for a cozy last night in</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 8 (Departure) -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggleDay(this)">
+      <div class="day-num">8</div>
+      <div class="day-info">
+        <div class="day-label">Mon Jun 29 · Departure</div>
+        <div class="day-title">Final Creek Walk · Breakfast · Drive to DEN</div>
+      </div>
+      <div class="day-badge">🛫 Fly Home</div>
+      <div class="day-toggle">▼</div>
+    </div>
+    <div class="day-body">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-label">☀️ Breakfast / Coffee — Optional</div>
+      <div class="activity">
+        <div class="act-icon i-food">☕</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Morning Fuel Options</span><span class="tag t-tip">Optional · See Eat &amp; Drink Tab</span></div>
+          <div class="hike-stats">
+            <div class="stat">🍳 Departure Day: <strong>Westside Cafe</strong> · Daily 7am–3pm · Local fave, last breakfast, won't break the bank · ~5 min drive W</div>
+            <div class="stat">☕ Quick: <strong>Yeti's Grind</strong> · Coffee + pastry before loading up · ~8 min walk · opens 7am</div>
+            <div class="stat">🌆 Denver Option: <strong>Tavernetta</strong> (Union Station, near DEN) · Mon–Fri 11:30am+ · Michelin Bib Gourmand · ~2 hrs drive E</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="act-icon i-hike">🚶</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Final Gore Creek Walk + Yeti's Grind</span><span class="tag t-hike">Morning Walk</span></div>
+          <p class="act-desc">One last stroll along Gore Creek before loading up. Let the kids wade. Coffee from Yeti's Grind (Lionshead, dog-friendly, great baked goods, Gore Creek views). Check out at 11am sharp.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-food">🍳</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Westside Cafe</span><span class="tag t-food">Breakfast</span></div>
+          <p class="act-desc">West Vail · ~5 min drive. Locals' favorite casual breakfast spot. Kid-friendly, great food, won't break the bank. Perfect pre-drive meal.</p>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-icon i-note">🚗</div>
+        <div class="act-content">
+          <div class="act-header"><span class="act-name">Drive Vail → DEN → Delta 2787</span><span class="tag t-transit">Departure</span></div>
+          <p class="act-desc">Vail → DEN: ~2 hrs on I-70 East. Allow 3+ hours before Delta 2787 departure time for the drive, Budget return, and TSA. McNamara Terminal at DTW on arrival. Return Budget minivan at DEN — Budget rental return is well-signed from I-70/Pena Blvd.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end #tab-itinerary -->
+
+<!-- ==================== MAP TAB ==================== -->
+<div id="tab-map" class="tab-pane">
+  <div class="section-eyebrow">Interactive Map</div>
+  <p class="section-title">Vail Valley — Key Locations</p>
+  <div class="map-legend">
+    <h4>Map Legend</h4>
+    <div class="legend-items">
+      <div class="legend-item">🏠 Lodging</div>
+      <div class="legend-item">🥾 Hike</div>
+      <div class="legend-item">🚡 Gondola</div>
+      <div class="legend-item">🍽 Restaurant</div>
+      <div class="legend-item">🎯 Activity</div>
+      <div class="legend-item">🏔 Day Trip</div>
+    </div>
+  </div>
+  <div id="mapContainer"></div>
+  <p style="font-size:.82rem;color:var(--mist);text-align:center;margin-top:8px;">Click any marker for details · Map centered on Lionshead Village</p>
+</div>
+
+<!-- ==================== GONDOLAS & PARKS TAB ==================== -->
+<div id="tab-gondolas" class="tab-pane">
+  <div class="section-eyebrow">Reference</div>
+  <p class="section-title">Gondolas, Lifts & Playgrounds</p>
+
+  <div class="gondola-grid">
+    <div class="gondola-card">
+      <div class="gondola-head">
+        <div class="gondola-icon">🚡</div>
+        <div><div class="gondola-title">Eagle Bahn Gondola (#19)</div><div class="gondola-sub">Lionshead Village → Eagle's Nest · VAIL</div></div>
+      </div>
+      <div class="gondola-body">
+        <strong>Location:</strong> Base at 610 W Lionshead Cir (~2 min walk from Landmark 507)<br>
+        <strong>Hours:</strong> Daily Jun 13–Sept 1, 9:30am–4pm (last ride ~3:45pm)<br>
+        <strong>Vertical:</strong> 2,125 ft rise · 8 min ride · 12 passengers/cabin<br>
+        <strong>Cost:</strong> ~$50 adult scenic · Kids 12 & under FREE with each adult ticket purchase. Epic Passholders: free.<br>
+        <strong>Top:</strong> Epic Discovery, Eagle's Loop trail, Nature Discovery Center, Talon's Deck dining, Bistro 14 bar<br>
+        <strong>Registration:</strong> Tickets at Lionshead ticket office or vail.com<br>
+        <strong>Tip:</strong> Adventure Pass bundles gondola + all Epic Discovery activities for best value.
+        <div class="stat-row">
+          <span class="stat">🔗 <a href="https://www.vail.com/explore-the-resort/activities-and-events/summer/gondola-rides.aspx" target="_blank">vail.com Gondola Info</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="gondola-card">
+      <div class="gondola-head">
+        <div class="gondola-icon">🚡</div>
+        <div><div class="gondola-title">Gondola One (#1)</div><div class="gondola-sub">Vail Village → Mid-Vail · VAIL</div></div>
+      </div>
+      <div class="gondola-body">
+        <strong>Location:</strong> Base in Vail Village (~10 min walk from Landmark)<br>
+        <strong>Hours:</strong> Daily Jun 13–Sept 1, 9:30am–4pm<br>
+        <strong>Vertical:</strong> Mid-Vail views · 120 cabins with 10 passengers each<br>
+        <strong>Cost:</strong> Same pricing as Eagle Bahn · Kids 12 & under FREE with adult<br>
+        <strong>Top:</strong> Mid-Vail restaurant, hiking trails, mountain biking, scenic views<br>
+        <strong>Tip:</strong> Gondola One is in the center of Vail Village near Pirate Ship Park — easy to combine park visit with a gondola ride.
+        <div class="stat-row">
+          <span class="stat">🔗 <a href="https://discovervail.com/things-to-do/scenic-gondola/" target="_blank">Scenic Gondola Guide</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="gondola-card">
+      <div class="gondola-head">
+        <div class="gondola-icon">🚡</div>
+        <div><div class="gondola-title">BreckConnect Gondola</div><div class="gondola-sub">Downtown Breckenridge → Peak 8 · BRECKENRIDGE</div></div>
+      </div>
+      <div class="gondola-body">
+        <strong>Location:</strong> 170 Watson Ave, Breckenridge (~45 min drive from Vail)<br>
+        <strong>Hours:</strong> Daily mid-Jun–Labor Day · 9:30am–5:30pm (last upload 5pm)<br>
+        <strong>Length:</strong> 7,592 ft · ~13 min · Rises 391 ft elevation · 121 gondola cars<br>
+        <strong>Cost:</strong> 100% FREE — no ticket, no reservation needed. Dogs ride free too.<br>
+        <strong>Stops:</strong> Breckenridge Station → Shock Hill → Peak 7 → Peak 8 Base<br>
+        <strong>Top:</strong> Peak 8 Base Camp — hiking, dining at Ski Hill Grill, Gold Runner Alpine Coaster ($), climbing wall, ropes course<br>
+        <strong>Parking:</strong> Paid lots at gondola or free shuttle from Airport Rd satellite lot (free shuttle every 15 min)
+        <div class="stat-row">
+          <span class="stat">🔗 <a href="https://www.breckenridge.com" target="_blank">Breckenridge.com</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="gondola-card">
+      <div class="gondola-head">
+        <div class="gondola-icon">🚡</div>
+        <div><div class="gondola-title">Centennial Express Chairlift</div><div class="gondola-sub">Beaver Creek Village → Spruce Saddle · BEAVER CREEK</div></div>
+      </div>
+      <div class="gondola-body">
+        <strong>Location:</strong> Beaver Creek Village, Avon (~25 min drive west of Landmark)<br>
+        <strong>Hours:</strong> Jun–Sept · Daily 9:30am–4:30pm<br>
+        <strong>Cost:</strong> Paid scenic lift ticket · <strong>Thursdays BOGO after 12pm</strong> (BC Unplugged concert nights) — best day to visit. Epic Passholders: free.<br>
+        <strong>Additional:</strong> Buckaroo Express 8-person gondola also available (designed for children + beginners)<br>
+        <strong>Top:</strong> Spruce Saddle Lodge dining, 110 mi of hiking trails, 4x4 tours, horseback riding, mountain biking, zip lines<br>
+        <strong>Bonus:</strong> Free Thursday night concert series in Beaver Creek Village (BC Unplugged) — great evening add-on
+        <div class="stat-row">
+          <span class="stat">🔗 <a href="https://www.beavercreek.com" target="_blank">beavercreek.com</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-eyebrow" style="margin-top:28px;">Playgrounds</div>
+  <p class="section-title" style="font-size:1.3rem;margin-bottom:16px;">Vail's Custom Playgrounds</p>
+  <div class="gondola-grid">
+    <div class="gondola-card">
+      <div class="gondola-head">
+        <div class="gondola-icon">🏴‍☠️</div>
+        <div><div class="gondola-title">Pirateship Park</div><div class="gondola-sub">9 Hanson Ranch Rd, Vail Village · FREE</div></div>
+      </div>
+      <div class="gondola-body">
+        <strong>Walk from Landmark:</strong> ~10 min (free in-town shuttle or walk via bus route)<br>
+        <strong>Age range:</strong> Best for ages 2–10 (toddlers need help on upper structures)<br>
+        <strong>Features:</strong> Custom-designed pirate ship with dragon, cockboat, bowsprit, lookout mast, portholes, climbing walls, nets, cannons, treasure chests, lifeboats. Gore Creek runs nearby for wading.<br>
+        <strong>Best time:</strong> Morning or early evening (pre-dinner). Can get crowded midday on weekends.<br>
+        <strong>History:</strong> Designed by artist Ty Gillespie, built by Valley Fabricators in Minturn — originally built in the 1970s and rebuilt in 2004 after community protests saved it.
+        <div class="stat-row">
+          <span class="stat">🔗 <a href="https://discovervail.com/businesses/pirate-ship-park/" target="_blank">Discover Vail</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="gondola-card">
+      <div class="gondola-head">
+        <div class="gondola-icon">🪺</div>
+        <div><div class="gondola-title">Sunbird Park</div><div class="gondola-sub">555 E Lionshead Circle · FREE</div></div>
+      </div>
+      <div class="gondola-body">
+        <strong>Walk from Landmark:</strong> ~2 min (literally adjacent to Lionshead Village)<br>
+        <strong>Age range:</strong> All ages · especially great for toddlers<br>
+        <strong>Features:</strong> Giant bird's nest–inspired climbing structures. Named one of the world's coolest playgrounds by Travel & Leisure. Adjacent to Vail Square (summer concerts). Views of Vail Mountain.<br>
+        <strong>Best time:</strong> Any time — right next to the Landmark, great for morning energy burn before breakfast or after dinner.
+      </div>
+    </div>
+    <div class="gondola-card">
+      <div class="gondola-head">
+        <div class="gondola-icon">🌿</div>
+        <div><div class="gondola-title">Red Sandstone Park</div><div class="gondola-sub">715 N Frontage Rd W · FREE</div></div>
+      </div>
+      <div class="gondola-body">
+        <strong>Walk from Landmark:</strong> ~10 min north<br>
+        <strong>Features:</strong> Another custom Vail playground with unique artistic elements. Less crowded than Village parks. Good option for a quieter play session.<br>
+        <strong>Off-leash dogs:</strong> Bighorn Park in East Vail and Stephens Park in West Vail are the only off-leash areas.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== TRACKING TAB ==================== -->
+<div id="tab-tracking" class="tab-pane">
+  <div class="section-eyebrow">Research</div>
+  <p class="section-title">Activity Tracker — Hit Rankings</p>
+  <div class="source-legend">
+    <h4>📚 How Hits Work</h4>
+    <p style="font-size:.83rem;color:#5A5A5A;margin-bottom:12px;">Each hit = one source that covers or recommends that activity for Vail. Sources include travel bloggers, outdoor guides, and local resources in the style you like. Where a specific post about Vail exists from a preferred creator, it's linked directly in the table. Hits give a rough signal of how widely covered and recommended an activity is — higher = more consensus across independent sources.</p>
+    <div class="source-list">
+      <div class="src-chip">🗺 Jess Wandering</div>
+      <div class="src-chip">🎒 JourneyEra (Jackson Groves)</div>
+      <div class="src-chip">🌍 Earth Trekkers</div>
+      <div class="src-chip">🧂 Salt in Our Hair</div>
+      <div class="src-chip">✈️ Renee Roaming</div>
+      <div class="src-chip">🌾 Wheatless Wanderlust</div>
+      <div class="src-chip">📸 Angela Liggs</div>
+      <div class="src-chip">🏔 Lonely Planet</div>
+      <div class="src-chip">🥾 Hiking Project</div>
+      <div class="src-chip">📍 Discover Vail</div>
+      <div class="src-chip">⭐ AllTrails Community</div>
+    </div>
+  </div>
+  <div class="filter-bar" id="filter-bar">
+    <button class="fb on" onclick="filterTable('all',this)">All</button>
+    <button class="fb" onclick="filterTable('hike',this)">🥾 Vail Hikes</button>
+    <button class="fb" onclick="filterTable('frisco',this)">🏔 Frisco</button>
+    <button class="fb" onclick="filterTable('breck',this)">⛷ Breckenridge</button>
+    <button class="fb" onclick="filterTable('activity',this)">🎯 Activities</button>
+    <button class="fb" onclick="filterTable('see',this)">👀 See</button>
+  </div>
+  <p style="font-size:.8rem;color:var(--rust);margin-bottom:12px;"><strong>🚩 Red flag</strong> = high-clearance or 4WD vehicle required · Not suitable for standard minivan rental</p>
+  <div class="track-wrap">
+  <table class="track-table" id="tracking-table">
+    <thead><tr>
+      <th style="min-width:160px">Activity / Hike</th>
+      <th>Hits</th>
+      <th style="min-width:140px">Drive / Walk from Landmark 507</th>
+      <th style="min-width:120px">Trail Stats</th>
+      <th style="min-width:130px">Sources</th>
+      <th style="min-width:100px">Links</th>
+      <th>Notes</th>
+      <th>Type</th>
+    </tr></thead>
+    <tbody>
+
+      <!-- ─────────── VAIL — IN TOWN ─────────── -->
+      <tr style="background:var(--pine);"><td colspan="8" style="padding:6px 12px;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">📍 Vail — In Town &amp; Walkable</td></tr>
+
+      <tr data-type="hike">
+        <td><strong>Gore Valley Trail (Gore Creek Path)</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>5</div></td>
+        <td>🚶 Steps from front door · Follow Creek E or W</td>
+        <td>2–19 mi · Flat · Paved · Stroller-friendly · Free</td>
+        <td style="font-size:11px;">Kelly Leja · Lonely Planet · Jess Wandering · Discover Vail · AllTrails</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/gore-valley-trail" target="_blank">AllTrails</a></td>
+        <td>"Best hike for accessibility" — Lonely Planet. Creek wading, wildlife, fishing. Walk right from condo.</td>
+        <td><span class="tag t-hike">Walk</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Berrypicker Trail</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>5</div></td>
+        <td>🚶 ~5 min walk <strong>W</strong> to Lionshead gondola base</td>
+        <td>3.4 mi one-way · 2,230 ft · 3–4.5 hrs up · Gondola FREE down</td>
+        <td style="font-size:11px;">Kelly Leja · AllTrails (3,534) · Jess Wandering · Discover Vail · Only in Your State</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/berrypicker-trail" target="_blank">AllTrails</a> · <a href="https://jesswandering.com/the-best-things-to-do-in-vail-colorado-during-the-summer/" target="_blank">Jess Wandering</a></td>
+        <td>Hike up from Lionshead through aspens + wildflowers. Gondola FREE down for hikers Jun 13–Sept 1.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Strawberry Lane / Berrypicker Loop</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚶 ~5 min walk <strong>W</strong> to Lionshead base / Pirate Playground</td>
+        <td>3.6 mi loop · 800 ft · ~2–2.5 hrs · Free</td>
+        <td style="font-size:11px;">Kelly Leja · Discover Vail · Vail Management Co.</td>
+        <td><a href="https://www.vailmanagement.com/blog/your-ultimate-locals-guide-summer-vail-colorado-top-trails-events-and-hidden-gems" target="_blank">Vail Guide</a></td>
+        <td>Kelly's kids-tested loop from Pirate Playground. Wildflowers + aspens. Well-marked but not on AllTrails.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Eagles Loop (atop Vail Mtn)</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div></div>4</div></td>
+        <td>🚶 ~2 min walk <strong>W</strong> to gondola + 8 min gondola ride <strong>Up</strong></td>
+        <td>1 mi loop · Flat · 15–20 min · Gondola ticket required</td>
+        <td style="font-size:11px;">Jess Wandering · Discover Vail · Visit Vail Valley · Vail Resort</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/eagles-loop" target="_blank">AllTrails</a> · <a href="https://jesswandering.com/the-best-things-to-do-in-vail-colorado-during-the-summer/" target="_blank">Jess Wandering</a></td>
+        <td>"Perfect for families with small kids" — Jess Wandering. Flat ridgetop loop. Wildflowers + Holy Cross views.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Fireweed Loop</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚶 ~2 min walk <strong>W</strong> to gondola + gondola ride <strong>Up</strong></td>
+        <td>1.5 mi · 100 ft · ~45 min · Gondola required</td>
+        <td style="font-size:11px;">Discover Vail · Vail Management Co.</td>
+        <td><a href="https://discovervail.com" target="_blank">Discover Vail</a></td>
+        <td>Mellow alpine wildflower stroll. Great intro trail for small kids or altitude acclimation. Gondola FREE down.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="activity">
+        <td><strong>Epic Discovery + Eagle Bahn Gondola</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>5</div></td>
+        <td>🚶 ~2 min walk <strong>W</strong> (Lionshead gondola base)</td>
+        <td>Jun 13–Sept 1 · 9:30am–4pm · Kids 12 &amp; under FREE with adult</td>
+        <td style="font-size:11px;">Kelly Leja · Jess Wandering · Discover Vail · Vail Mtn 2025 Tips · Vail Management Co.</td>
+        <td><a href="https://www.vail.com/explore-the-resort/activities-and-events/summer/epic-discovery.aspx" target="_blank">vail.com</a> · <a href="https://jesswandering.com/the-best-things-to-do-in-vail-colorado-during-the-summer/" target="_blank">Jess Wandering</a></td>
+        <td>Mountain coaster, kids zipline (ages 4+), nature center yurt, bungee trampoline, climbing wall. Coaster has handbrakes for parents riding with kids.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="see">
+        <td><strong>Pirateship Park + Sunbird Park</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div></div>4</div></td>
+        <td>🚶 Sunbird ~2 min <strong>W</strong> · Pirateship ~10 min <strong>E</strong> (Vail Village)</td>
+        <td>Free · Open year-round</td>
+        <td style="font-size:11px;">Kelly Leja · Discover Vail · Town of Vail · Landmark at Vail · Travel &amp; Leisure</td>
+        <td><a href="https://discovervail.com/businesses/pirate-ship-park/" target="_blank">Discover Vail</a></td>
+        <td>Sunbird named one of world's coolest playgrounds (T&amp;L). Pirateship: dragon, cannons, nets, creek nearby. Both free.</td>
+        <td><span class="tag t-see">See</span></td>
+      </tr>
+      <tr data-type="see">
+        <td><strong>Betty Ford Alpine Gardens + Ford Park</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚶 ~12 min walk <strong>E</strong> (Ford Park)</td>
+        <td>Free · Open daily · ~1–2 hrs</td>
+        <td style="font-size:11px;">Jess Wandering · Discover Vail · Vail Vacay</td>
+        <td><a href="https://www.bettyfordalpinegardens.org" target="_blank">Gardens</a> · <a href="https://discovervail.com" target="_blank">Discover Vail</a></td>
+        <td>Highest botanical garden in NA. Ford Park Playground + Gore Creek wading + GRF Amphitheater free lawn adjacent.</td>
+        <td><span class="tag t-see">See</span></td>
+      </tr>
+      <tr data-type="activity">
+        <td><strong>GRF Amphitheater — Free Concert</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚶 ~12 min walk <strong>E</strong> (Ford Park)</td>
+        <td>Free lawn · Ticketed concerts audible free from park</td>
+        <td style="font-size:11px;">Kelly Leja · GRF Amphitheater Calendar</td>
+        <td><a href="https://www.vailgfa.com/calendar/" target="_blank">GFA Calendar</a></td>
+        <td>Free Jimmy Buffett cover band Tue Jun 23 at 6:30pm. Paid orchestra Jun 25/27/28 audible FREE from Ford Park lawn.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="activity">
+        <td><strong>Chasing Rabbits — Rabbit Hole Arcade</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚶 ~8 min walk <strong>E</strong> (Vail Village · Solaris Plaza)</td>
+        <td>141 E Meadow Dr · Open daily · Arcade + restaurant</td>
+        <td style="font-size:11px;">Colorado Expression · Vail Valley Dining Guide · Denver Eater</td>
+        <td><a href="https://chasingrabbitsvail.com" target="_blank">Website</a></td>
+        <td>Alice in Wonderland themed 13,000 sq ft. Pac-Man, Skee-Ball, air hockey, DJ, neon. Also full Mediterranean restaurant + Moon Rabbit speakeasy.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="see">
+        <td><strong>Sonnenalp Spa</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚶 ~10 min walk <strong>E</strong> (Vail Village · 20 Vail Rd)</td>
+        <td>Treatment required for facility access · Day pass ~$50 (weekdays, availability-based)</td>
+        <td style="font-size:11px;">Discover Vail · Sonnenalp Hotel</td>
+        <td><a href="https://sonnenalp.com/spa/" target="_blank">sonnenalp.com/spa</a></td>
+        <td>European-style spa. Massages, facials, oxygen bar (great for altitude). Indoor/outdoor pool + hot tubs. Kids under 16 pool area only with adult.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="see">
+        <td><strong>Vail Village + Farmers Market</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚶 ~8–10 min walk <strong>E</strong></td>
+        <td>Free · Farmers Market: Saturdays</td>
+        <td style="font-size:11px;">Discover Vail · Jess Wandering</td>
+        <td><a href="https://discovervail.com" target="_blank">Discover Vail</a></td>
+        <td>Boutique shops, restaurants, mountain village architecture. Farmers Market Saturdays in summer. Great post-hike base.</td>
+        <td><span class="tag t-see">See</span></td>
+      </tr>
+      <tr data-type="see">
+        <td><strong>Ford Park Playground + Donovan Park</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>Ford Park: 🚶 ~12 min <strong>E</strong> · Donovan: 🚗 ~10 min <strong>W</strong></td>
+        <td>Free · Open year-round</td>
+        <td style="font-size:11px;">Kelly Leja · Discover Vail</td>
+        <td><a href="https://discovervail.com" target="_blank">Discover Vail</a></td>
+        <td>Ford Park: large playground, picnic shelter, restrooms, Gore Creek wading. Donovan (West Vail): soccer, basketball, spacious park.</td>
+        <td><span class="tag t-see">See</span></td>
+      </tr>
+
+      <!-- ─────────── VAIL — EAST (hikes requiring bus/car) ─────────── -->
+      <tr style="background:var(--pine);"><td colspan="8" style="padding:6px 12px;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">📍 Vail — East (East Vail · Eagle's Nest Wilderness)</td></tr>
+
+      <tr data-type="hike">
+        <td><strong>Booth Falls Trail</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>5</div></td>
+        <td>🚌 ~15 min <strong>E</strong> · Free East Vail bus from VTC · No car parking at TH</td>
+        <td>4.7 mi RT · 1,325 ft · 2.5–3 hrs · Free</td>
+        <td style="font-size:11px;">Kelly Leja · Jess Wandering · Discover Vail · AllTrails (6,627) · East West Hospitality</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/booth-falls-trail" target="_blank">AllTrails</a> · <a href="https://jesswandering.com/the-best-things-to-do-in-vail-colorado-during-the-summer/" target="_blank">Jess Wandering</a></td>
+        <td>Most popular Vail hike. 60-ft waterfall at mile 2 — perfect family turnaround. Free TOV bus to trailhead.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Gore Lake</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~10 min <strong>E</strong> via I-70</td>
+        <td>12.25 mi RT · 2,900 ft · 5–6 hrs · Free · Hiker Shuttle available</td>
+        <td style="font-size:11px;">Discover Vail · AllTrails · Fox in the Forest</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/gore-lake" target="_blank">AllTrails</a> · <a href="https://www.foxintheforest.net/vail-hikes/" target="_blank">Fox in the Forest</a></td>
+        <td>Spectacular backcountry alpine lake in rugged Gore Range. Low crowds due to difficulty. Not for young kids.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Deluge Lake</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~10 min <strong>E</strong> via I-70</td>
+        <td>8.5 mi RT · 3,500 ft · Full day · Free</td>
+        <td style="font-size:11px;">Discover Vail · AllTrails</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/deluge-lake" target="_blank">AllTrails</a></td>
+        <td>Grueling steep climb to high-alpine lake with dramatic rock walls. Hiking poles strongly recommended. Very taxing.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Pitkin Lake</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~10 min <strong>E</strong> via I-70</td>
+        <td>10 mi RT · 3,000 ft · Full day · Free · Hiker Shuttle peak weekends</td>
+        <td style="font-size:11px;">Discover Vail · AllTrails · Fox in the Forest</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/pitkin-lake" target="_blank">AllTrails</a></td>
+        <td>Steady valley climb past waterfalls + wildflower fields. Best early July. Free Hiker Shuttle required peak summer weekends.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+
+      <!-- ─────────── VAIL PASS / SHRINE RIDGE ─────────── -->
+      <tr style="background:var(--pine);"><td colspan="8" style="padding:6px 12px;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">📍 Vail Pass / Shrine Ridge (SE of Vail)</td></tr>
+
+      <tr data-type="hike">
+        <td><strong>Shrine Ridge Trail</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>5</div></td>
+        <td>🚗 ~15 min <strong>SE</strong> · I-70 Exit 190 → Shrine Pass Rd 2.3 mi (dirt, standard car OK)</td>
+        <td>4.6 mi RT · 1,000 ft · 2–2.5 hrs · Free · Pit toilet at TH</td>
+        <td style="font-size:11px;">Kelly Leja · Jess Wandering · Know Nothing Nomads · AllTrails (4,390) · Blue Mtn Belle · Discover Vail</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/shrine-ridge-trail" target="_blank">AllTrails</a> · <a href="https://jesswandering.com/the-best-things-to-do-in-vail-colorado-during-the-summer/" target="_blank">Jess Wandering</a> · <a href="https://knownothingnomads.com/shrine-ridge-trail-a-wildflower-paradise/" target="_blank">Know Nothing Nomads</a></td>
+        <td>"Shrine Ridge stood out for the sheer diversity of wildflowers. Spectacular 360° views." — Jess Wandering. Views of Mt. of the Holy Cross.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Notch Mountain 🚩</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>1</div></td>
+        <td>🚗 ~20 min <strong>SE</strong> + 8 mi Tigiwon Rd — <span style="color:var(--rust)">🚩 HIGH CLEARANCE</span></td>
+        <td>10 mi RT · 2,700 ft · 5–6 hrs · Start early</td>
+        <td style="font-size:11px;">Reference list</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/notch-mountain-trail" target="_blank">AllTrails</a></td>
+        <td><span style="color:var(--rust);font-weight:600;">🚩 8-mile drive on notoriously rough Tigiwon Rd — high-clearance strongly recommended.</span> Demanding alpine trek. Top half fully exposed to lightning.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+
+      <!-- ─────────── NORTH OF VAIL ─────────── -->
+      <tr style="background:var(--pine);"><td colspan="8" style="padding:6px 12px;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">📍 North of Vail (Red Sandstone Rd area)</td></tr>
+
+      <tr data-type="hike">
+        <td><strong>Lost Lake 🚩</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~20 min <strong>N</strong> · Red Sandstone Rd area · <span style="color:var(--rust)">🚩 4WD alternate</span></td>
+        <td>7 mi RT · 950 ft · 3–4 hrs · Free · 4WD cuts to 1.5 mi</td>
+        <td style="font-size:11px;">Discover Vail · AllTrails</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/lost-lake-trail-vail" target="_blank">AllTrails</a></td>
+        <td><span style="color:var(--rust);font-weight:600;">🚩 4WD road option requires high clearance.</span> Peaceful hidden gem lake, far fewer crowds. Short alternate for high-clearance vehicles.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Piney River / Upper Piney Falls 🚩</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div></div>4</div></td>
+        <td>🚗 ~25 min <strong>N</strong> · 12 mi via Red Sandstone Rd · <span style="color:var(--rust)">🚩 may need high clearance</span></td>
+        <td>6 mi RT · 500 ft · 3–3.5 hrs · Free · SUP/Canoe $40/hr at Ranch</td>
+        <td style="font-size:11px;">Discover Vail · Jess Wandering · Moving Mountains</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/upper-piney-river-falls-trail" target="_blank">AllTrails</a> · <a href="https://discovervail.com/things-to-do/piney-river-ranch/" target="_blank">Discover Vail</a></td>
+        <td><span style="color:var(--rust);font-weight:600;">🚩 Road may require high-clearance.</span> Wildflower meadows + aspen groves to Upper Piney Falls. SUP/canoe at Ranch. Spectacular Gore Range views.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+
+      <!-- ─────────── AVON / BEAVER CREEK ─────────── -->
+      <tr style="background:var(--pine);"><td colspan="8" style="padding:6px 12px;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">📍 Avon / Beaver Creek (~15–25 min W)</td></tr>
+
+      <tr data-type="activity">
+        <td><strong>Nottingham Lake — SUP/Kayak</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~15 min <strong>W</strong> (Avon · I-70 Exit 167/168)</td>
+        <td>Rentals on-site · Hourly fee · Calm flat water</td>
+        <td style="font-size:11px;">Discover Vail · Moving Mountains</td>
+        <td><a href="https://discovervail.com/things-to-do/stand-up-sup/" target="_blank">Discover Vail SUP</a></td>
+        <td>Calm flat-water lake, great for beginners and kids. Gore Range backdrop. Stand Up Paddle Colorado.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="activity">
+        <td><strong>Beaver Creek + Centennial Express</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚗 ~25–30 min <strong>W</strong> (Avon · I-70 Exit 167)</td>
+        <td>Thu BOGO lift tickets after noon · Daily Jun–Sept</td>
+        <td style="font-size:11px;">Kelly Leja · Beaver Creek Resort · Vail Daily · US News Travel</td>
+        <td><a href="https://www.beavercreek.com/explore-the-resort/activities/summer-activities.aspx" target="_blank">beavercreek.com</a></td>
+        <td>Luxury family resort. 110 mi trails. Thu BOGO lifts + free BC Unplugged concerts. Avon/BC gondola FREE for scenic ride.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="hike">
+        <td><strong>Willow Lakes</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~35 min <strong>NW</strong> (Silverthorne · Raven Golf Course area)</td>
+        <td>11.5 mi RT · 2,750 ft · Full day · Free</td>
+        <td style="font-size:11px;">AllTrails · Reference list</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/willow-lakes" target="_blank">AllTrails</a></td>
+        <td>Advanced trek to three alpine lakes backed by Zodiac Spires. Long strenuous day — early start essential.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="activity">
+        <td><strong>Horseback Riding / Llama Hike</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚗 Varies by outfitter · ~15–30 min area</td>
+        <td>1–3 hrs · Paid · Advance booking required</td>
+        <td style="font-size:11px;">Native Jeeps Blog · Discover Vail · Visit Vail Valley</td>
+        <td><a href="https://discovervail.com" target="_blank">Discover Vail (outfitters)</a></td>
+        <td>Llama hikes unique to Vail — llamas carry gear, kids lead them. Pony rides for youngest. Multiple outfitters in Vail Valley.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+
+      <!-- ─────────── FRISCO / OFFICER'S GULCH (~20–25 min E) ─────────── -->
+      <tr style="background:var(--pine);"><td colspan="8" style="padding:6px 12px;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">📍 Frisco / Officer's Gulch (~20–25 min E)</td></tr>
+
+      <tr data-type="frisco">
+        <td><strong>Officer's Gulch Pond</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~18 min <strong>E</strong> · I-70 Exit 198</td>
+        <td>0.9 mi loop · 32 ft · 20–30 min · Free</td>
+        <td style="font-size:11px;">AllTrails · Reference list · Summit Daily</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/officers-gulch" target="_blank">AllTrails</a></td>
+        <td>Picturesque pond loop right off I-70. Ducks, trout, stone hut, photogenic bridge. Perfect quick stop. Fishing requires CO license (16+).</td>
+        <td><span class="tag t-see">See</span></td>
+      </tr>
+      <tr data-type="frisco">
+        <td><strong>Rainbow Lake via Peaks Trail</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div></div>4</div></td>
+        <td>🚗 ~25 min <strong>E</strong> · I-70 Exit 203 → Frisco</td>
+        <td>1.6 mi RT · 157 ft · 40 min · Free · Full loop: 4.8 mi / 620 ft</td>
+        <td style="font-size:11px;">Kelly Leja · AllTrails (3,721) · Denver7 · Town of Frisco</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/rainbow-lake" target="_blank">AllTrails (easy)</a> · <a href="https://www.alltrails.com/trail/us/colorado/rainbow-lake-miners-creek-and-peaks-trail-loop" target="_blank">AllTrails (loop)</a></td>
+        <td>Easy family hike to scenic alpine lake. Boardwalk, creek crossings. Common moose sightings. Great arrival-day hike. Grocery stop at Exit 203 after.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+
+      <!-- ─────────── BRECKENRIDGE (~40 min W) ─────────── -->
+      <tr style="background:var(--pine);"><td colspan="8" style="padding:6px 12px;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;">📍 Breckenridge (~40 min W)</td></tr>
+
+      <tr data-type="breck">
+        <td><strong>BreckConnect Gondola — Free Ride</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚗 ~40 min <strong>W</strong> · I-70 W to Exit 203 S on Hwy 9</td>
+        <td>FREE · 170 Watson Ave · Jun 16–Sept 7, 2026 · 9:30am–5:30pm</td>
+        <td style="font-size:11px;">Kelly Leja · Breckenridge Epic Discovery · Know Nothing Nomads · Breck 2025 Tips</td>
+        <td><a href="https://www.breckenridge.com" target="_blank">Breckenridge.com</a> · <a href="https://news.vailresorts.com/BreckSummer25" target="_blank">Breck 2025 Tips</a></td>
+        <td>Free gondola from downtown Breck to Peak 8. No ticket, no reservation. Views of Cucumber Gulch. Epic Discovery at top (separate fee).</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="breck">
+        <td><strong>Aspen Alley Trail</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div></div>4</div></td>
+        <td>🚗 ~40 min <strong>W</strong> + town shuttle to TH (SummitStage.com)</td>
+        <td>2.9 mi · 531 ft · 1.5–2 hrs · Free</td>
+        <td style="font-size:11px;">Kelly Leja · AllTrails (2,472) · Know Nothing Nomads · Denver7</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/aspen-alley" target="_blank">AllTrails</a> · <a href="https://knownothingnomads.com/best-hiking-in-breckenridge/" target="_blank">Know Nothing Nomads</a></td>
+        <td>Singletrack through dense aspen groves. Lush green in summer. Lower TH at Old Sawmill Museum. Town shuttle available.</td>
+        <td><span class="tag t-hike">Hike</span></td>
+      </tr>
+      <tr data-type="breck">
+        <td><strong>Breckenridge Troll (Isak Heartstone)</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚗 ~40 min <strong>W</strong> · Park at Stephen C. West Ice Arena</td>
+        <td>1.2 mi RT · 114 ft · 30–45 min · Free</td>
+        <td style="font-size:11px;">Kelly Leja · AllTrails · Lost Between Oceans · Danielle Outdoors</td>
+        <td><a href="https://www.alltrails.com/trail/us/colorado/trollstigen-southside-and-illinois-creek-low-trail" target="_blank">AllTrails</a> · <a href="https://lostbetweenoceans.com/breckenridge-troll-hike-full-guide/" target="_blank">Lost Between Oceans</a></td>
+        <td>Easy aspen trail to 15-ft wooden troll by Danish artist Thomas Dambo. Major kids hit. Start at Stephen C. West Ice Arena parking.</td>
+        <td><span class="tag t-see">See</span></td>
+      </tr>
+      <tr data-type="breck">
+        <td><strong>Epic Discovery (Breckenridge)</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div></div>3</div></td>
+        <td>🚗 ~40 min <strong>W</strong> · Access via free BreckConnect Gondola</td>
+        <td>Peak 8 Base · Buy unlimited passes online to save</td>
+        <td style="font-size:11px;">Kelly Leja · Breckenridge Epic Discovery · Breck 2025 Tips</td>
+        <td><a href="https://gobreck.com/plan-your-visit/breckenridge-ski-resort/epic-discovery/" target="_blank">Breck Epic Discovery</a></td>
+        <td>Ziplines, rock walls, alpine mazes, Gold Runner Alpine Coaster, Alpine Slide. Buy unlimited passes online to save. Access via free gondola.</td>
+        <td><span class="tag t-act">Activity</span></td>
+      </tr>
+      <tr data-type="breck">
+        <td><strong>Main Street Breckenridge</strong></td>
+        <td><div class="hits-wrap"><div class="hit-dots"><div class="dot"></div><div class="dot"></div><div class="dot e"></div><div class="dot e"></div><div class="dot e"></div></div>2</div></td>
+        <td>🚗 ~40 min <strong>W</strong> · Downtown · Street parking or free transit trolley</td>
+        <td>Free to stroll · Saturdays: farmers market</td>
+        <td style="font-size:11px;">Know Nothing Nomads · Reference list</td>
+        <td><a href="https://knownothingnomads.com/best-hiking-in-breckenridge/" target="_blank">Know Nothing Nomads</a></td>
+        <td>Historic mining town center. Toy shops, eateries, alpine charm. Boreas Pass Road nearby for scenic drive.</td>
+        <td><span class="tag t-see">See</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+<!-- ==================== EAT & DRINK TAB ==================== -->
+<div id="tab-eat" class="tab-pane">
+  <div class="section-eyebrow">Food, Drink & Nightlife</div>
+  <p class="section-title">Where to Eat & Drink in Vail</p>
+  <div class="filter-bar">
+    <button class="fb on" onclick="filterEat('all',this)">All</button>
+    <button class="fb" onclick="filterEat('breakfast',this)">☀️ Breakfast</button>
+    <button class="fb" onclick="filterEat('lunch',this)">🥪 Lunch</button>
+    <button class="fb" onclick="filterEat('dinner',this)">🍽 Dinner</button>
+    <button class="fb" onclick="filterEat('coffee',this)">☕ Coffee</button>
+    <button class="fb" onclick="filterEat('ice cream',this)">🍦 Ice Cream</button>
+    <button class="fb" onclick="filterEat('treat',this)">🍭 Treats</button>
+    <button class="fb" onclick="filterEat('bar',this)">🍺 Bars & Drinks</button>
+    <button class="fb" onclick="filterEat('winery',this)">🍷 Wineries</button>
+  </div>
+  <div class="eat-grid" id="eat-grid">
+
+    <div class="eat-card" data-meal="breakfast lunch">
+      <div class="eat-hdr"><div class="eat-icon">🍳</div><div><div class="eat-name">The Little Diner <span class="must">Must</span></div></div></div>
+      <div class="eat-cat">Breakfast · Lunch · Lionshead · ~3 min walk</div>
+      <div class="eat-hours">⏰ Daily 7:00 AM – 2:00 PM (last seating 1:45pm)</div>
+      <div class="eat-desc">Vail's only full-service diner. Everything made from scratch. Cap'N Crunch French toast, crepes, omelets, corned beef hash, biscuits & gravy. Kids love it. Arrive early — waits build fast in summer. <em>Note: building redeveloped May 2027 — enjoy it while it's here.</em></div>
+      <div class="eat-links">
+        <a href="https://thelittlediner.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.yelp.com/biz/the-little-diner-vail" class="eat-link" target="_blank">⭐ Yelp</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🍕</div><div><div class="eat-name">Blue Moose Pizza <span class="must">Must</span></div></div></div>
+      <div class="eat-cat">Lunch · Dinner · Lionshead · ~3 min walk</div>
+      <div class="eat-hours">⏰ Daily 11:00 AM – 9:00 PM</div>
+      <div class="eat-desc">Hand-tossed NY-style pizza, Vail institution since 1995. Lovely patio in Vail Square. Kids draw on the paper tablecloths. "Little Moose" kids menu. Delivery available. Great casual family spot — walk from Landmark.</div>
+      <div class="eat-links">
+        <a href="https://www.bluemoosepizza.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.bluemoosepizza.com/vail-groups" class="eat-link" target="_blank">📋 Menu</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🍔</div><div><div class="eat-name">Bully Ranch Restaurant</div></div></div>
+      <div class="eat-cat">Lunch · Dinner · Vail Village (Sonnenalp) · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily 11:00 AM – 10:00 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 No formal happy hour — strong cocktail program all day</div>
+      <div class="eat-desc">Great outdoor patio under green umbrellas. Wagyu Peak Burger, creamy tomato-cheddar soup, margherita flatbread. Kids Cafe menu. Strong cocktail program. No reservations required.</div>
+      <div class="eat-links">
+        <a href="https://sonnenalp.com/dining/bully-ranch/" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.opentable.com/r/bully-ranch-vail" class="eat-link" target="_blank">📅 OpenTable</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🍷</div><div><div class="eat-name">Sweet Basil <span class="must">Top Pick</span></div></div></div>
+      <div class="eat-cat">Lunch · Dinner · Vail Village · ~10 min walk · Upscale</div>
+      <div class="eat-hours">⏰ Lunch: Wed–Sun 11:30 AM–3:00 PM · Dinner: Daily 5–9 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy Hour: Daily 3:00–5:00 PM · Bar menu + drink specials</div>
+      <div class="eat-desc">Michelin Guide–highlighted since 1977. Creative New American, beautiful creekside patio. Wine list of 500+. <strong>$25/person deposit required for dinner reservations.</strong> Reserve up to 30 days ahead — books fast in June.</div>
+      <div class="eat-links">
+        <a href="https://sweetbasilvail.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.exploretock.com/sweetbasil/" class="eat-link" target="_blank">📅 Reserve (Tock)</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🍝</div><div><div class="eat-name">La Nonna Vail</div></div></div>
+      <div class="eat-cat">Dinner · Vail Village · Italian · ~10 min walk</div>
+      <div class="eat-hours">⏰ Mon–Sat 5:00 PM – 9:00 PM · <span style="color:var(--rust)">Closed Sunday</span></div>
+      <div class="eat-desc">Authentic Italian — all pastas handmade daily with Pivetti flour from Italy. Warm and elegant setting. Reservations by phone only (no email). Book up to 30 days ahead Mon–Sat after 3pm MST.</div>
+      <div class="eat-links">
+        <a href="https://lanonnavail.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.opentable.com/r/la-nonna-vail" class="eat-link" target="_blank">📅 OpenTable</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🦌</div><div><div class="eat-name">Garfinkel's (Garfs)</div></div></div>
+      <div class="eat-cat">Lunch · Dinner · Lionshead · ~3 min walk</div>
+      <div class="eat-hours">⏰ Mon–Wed 12–8 PM · Thu 12–10 PM · Fri–Sun 11 AM–10 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy Hour: Daily 3–5 PM · Drink + snack deals on deck</div>
+      <div class="eat-closed-note">⚠️ Confirm open — reported temporarily closed as of May 2026. Call ahead: (970) 476-3789</div>
+      <div class="eat-desc">Vail institution since 1992. Sunny deck overlooking Vail Mountain and gondola. Elk + cheddar "Colorado Mountain Dog," chicken fingers, craft beer. Classic mountain sports bar atmosphere.</div>
+      <div class="eat-links">
+        <a href="https://garfsvail.com" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🔥</div><div><div class="eat-name">Mountain Standard</div></div></div>
+      <div class="eat-cat">Lunch · Dinner · Vail Village (Gore Creek) · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily 11:30 AM – 9:00 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy Hour: Daily 3–5 PM · Discounted apps + cocktails</div>
+      <div class="eat-desc">By the creators of Sweet Basil. Open wood-fire cooking, rustic tavern feel. Rocky Mountain ingredients. Michelin Guide Colorado recommended. Creekside patio, lively energy. Great pimento cheese, whole trout, craft cocktails. Reservations recommended.</div>
+      <div class="eat-links">
+        <a href="https://mtnstandard.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.opentable.com/r/mountain-standard" class="eat-link" target="_blank">📅 OpenTable</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🏔</div><div><div class="eat-name">Alpenrose Vail</div></div></div>
+      <div class="eat-cat">Dinner · Vail Village · Austrian · ~8 min walk</div>
+      <div class="eat-hours">⏰ Thu–Sun 11:30 AM – 10:00 PM · <span style="color:var(--rust)">Closed Mon–Wed</span></div>
+      <div class="eat-desc">Authentic Alpine cuisine since 1974. Spätzle, Frankfurters, apple strudel, Kässpätzle. Raclette and fondue for the table. Special kids menu. Long family-style tables. Sunny patio in Vail Village. Warm European hospitality.</div>
+      <div class="eat-links">
+        <a href="https://www.alpenrose-vail.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.alpenrose-vail.com/reservations/" class="eat-link" target="_blank">📅 Reservations</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="breakfast lunch">
+      <div class="eat-hdr"><div class="eat-icon">🥗</div><div><div class="eat-name">Westside Cafe</div></div></div>
+      <div class="eat-cat">Breakfast · Lunch · West Vail · ~5 min drive</div>
+      <div class="eat-hours">⏰ Daily 7:00 AM – 3:00 PM</div>
+      <div class="eat-desc">Locals' breakfast spot. All-day breakfast + lunch from 11:30am. Kid-friendly interactive menu, healthy options. Won't break the bank. Perfect pre-hike or departure-day breakfast. 2211 N Frontage Rd W.</div>
+      <div class="eat-links">
+        <a href="https://westsidecafe.net" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="drinks">
+      <div class="eat-hdr"><div class="eat-icon">☕</div><div><div class="eat-name">Yeti's Grind</div></div></div>
+      <div class="eat-cat">Coffee · Breakfast · Vail Village · ~8 min walk</div>
+      <div class="eat-hours">⏰ Mon–Thu 7:00 AM – 6:00 PM · Fri–Sat 7:00 AM – 7:00 PM · Sun 7:00 AM – 6:00 PM</div>
+      <div class="eat-desc">Voted Best Coffee in Vail 8 years running. Specialty espresso + single origin. Avocado toast, breakfast burritos, pastries, ciabatta sandwiches. Outdoor patio with Gore Creek and mountain views. Dog-friendly. Also has a West Vail location.</div>
+      <div class="eat-links">
+        <a href="https://www.yetisgrind.com" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="lunch dinner">
+      <div class="eat-hdr"><div class="eat-icon">🏔</div><div><div class="eat-name">Talon's Deck (Summit)</div></div></div>
+      <div class="eat-cat">Lunch · Eagle's Nest atop Vail Mountain · Via Gondola</div>
+      <div class="eat-hours">⏰ Open during Epic Discovery hours (Jun 13–Sept 1, ~10 AM–4 PM)</div>
+      <div class="eat-desc">Vail's largest deck atop the mountain. Burgers, hot dogs, chicken tenders, salads. Pricey ($15–22/item) but the view of the Gore Range is unmatched. Bistro 14 bar adjacent. Great on Epic Discovery day.</div>
+      <div class="eat-links">
+        <a href="https://www.vail.com/explore-the-resort/dining/talons-deck.aspx" class="eat-link" target="_blank">🌐 Info</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="treat">
+      <div class="eat-hdr"><div class="eat-icon">🍭</div><div><div class="eat-name">Fuzziwig's Candy Factory</div></div></div>
+      <div class="eat-cat">Treats · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Check current hours — typically 10 AM – 9 PM in summer</div>
+      <div class="eat-desc">Fresh-made fudge, candied apples, saltwater taffy, and house-made sweets. Kids will ask to go back every day. Great post-hike reward in the Village.</div>
+      <div class="eat-links">
+        <a href="https://www.fuzziwigs.com" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="treat">
+      <div class="eat-hdr"><div class="eat-icon">🍦</div><div><div class="eat-name">Rocket Fizz</div></div></div>
+      <div class="eat-cat">Treats · Candy + Soda · Lionshead · ~3 min walk</div>
+      <div class="eat-hours">⏰ Check current hours — typically 10 AM – 9 PM</div>
+      <div class="eat-desc">Quirky soda pop & candy shop in Lionshead. Hundreds of novelty sodas and bulk candy. Independently owned, Lionshead landmark. Great stop for kids after the gondola or any hike day.</div>
+      <div class="eat-links">
+        <a href="https://rocketfizz.com" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <!-- ====== SWISS CHALET ====== -->
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🇨🇭</div><div><div class="eat-name">Swiss Chalet Restaurant <span class="must">Worth It</span></div></div></div>
+      <div class="eat-cat">Dinner · Vail Village (Sonnenalp Hotel) · ~10 min walk</div>
+      <div class="eat-hours">⏰ Wed–Sun 5:00 PM – 10:00 PM · <span style="color:var(--rust)">Closed Mon–Tue</span> · Opens June 10 for summer</div>
+      <div class="eat-desc">Authentic Alpine dining inside the Sonnenalp Hotel. Cheese fondue, meat fondue, raclette (cook at your own table), Wiener Schnitzel, Käse Spätzle. Chocolate fondue for dessert. Kids are welcome and the interactive table-cooking format is a huge hit with families. Multiple Wine Spectator Awards. Cozy wood-paneled chalet atmosphere — transports you straight to the Swiss Alps. Complimentary valet parking for dining guests (up to 2 hrs).</div>
+      <div class="eat-links">
+        <a href="https://sonnenalp.com/dining/swiss-chalet/" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.opentable.com/swiss-chalet-restaurant" class="eat-link" target="_blank">📅 Reserve</a>
+      </div>
+    </div>
+
+    <!-- ====== COFFEE SHOPS ====== -->
+    <div class="eat-card" data-meal="coffee">
+      <div class="eat-hdr"><div class="eat-icon">☕</div><div><div class="eat-name">Yeti's Grind <span class="must">Best Coffee</span></div></div></div>
+      <div class="eat-cat">Coffee · Breakfast Bites · Vail Village · ~8 min walk</div>
+      <div class="eat-hours">⏰ Mon–Thu 7:00 AM – 6:00 PM · Fri–Sat 7:00 AM – 7:00 PM · Sun 7:00 AM – 6:00 PM</div>
+      <div class="eat-desc">Voted Best Coffee in Vail 8 years running. Partners with Sweet Bloom + Corvus Coffee for specialty roasts. Signature "Yeti Latte" — honey, cinnamon, double espresso. Avocado toast, breakfast burritos, pastries. Outdoor patio with mountain views. Dog-friendly.</div>
+      <div class="eat-links">
+        <a href="https://www.yetisgrind.com" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="coffee">
+      <div class="eat-hdr"><div class="eat-icon">🏹</div><div><div class="eat-name">Two Arrows Coffee + Bar</div></div></div>
+      <div class="eat-cat">Coffee · Cocktails · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily 7:00 AM – Midnight (Wed closes 6 PM)</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Transitions to cocktail bar after 5 PM · Live events + music</div>
+      <div class="eat-desc">Coffee shop by day, cocktail bar by night — right in the heart of Vail Village. Works with Color Coffee Roasters out of Eagle, CO. Perfect cortado or flat white in the morning; espresso martinis and craft cocktails in the evening. Sleek, minimalist space. Great for pre-dinner drinks or après. Live music and events.</div>
+      <div class="eat-links">
+        <a href="https://www.twoarrowscoffee.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://discovervail.com/businesses/two-arrows-coffee-bar/" class="eat-link" target="_blank">📍 Discover Vail</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="coffee">
+      <div class="eat-hdr"><div class="eat-icon">🥐</div><div><div class="eat-name">The Belle</div></div></div>
+      <div class="eat-cat">Coffee · Pastries · Lionshead · ~2 min walk</div>
+      <div class="eat-hours">⏰ Daily 7:00 AM – 3:00 PM</div>
+      <div class="eat-desc">Lionshead's gourmet grab-and-go. Locally curated house roast coffee + loose-leaf teas. Killer croissants, chorizo burritos, specialty pastries, macarons, and seasonal espresso drinks. Convenient — literally steps from the Landmark. Quieter than Village spots in morning hours.</div>
+      <div class="eat-links">
+        <a href="https://www.yelp.com/biz/the-belle-vail" class="eat-link" target="_blank">⭐ Reviews</a>
+      </div>
+    </div>
+
+    <!-- ====== ICE CREAM ====== -->
+    <div class="eat-card" data-meal="ice cream">
+      <div class="eat-hdr"><div class="eat-icon">🍨</div><div><div class="eat-name">Sundae — Vail <span class="must">Top Pick</span></div></div></div>
+      <div class="eat-cat">Ice Cream · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily 11:00 AM – 10:00 PM</div>
+      <div class="eat-desc">Small-batch artisan ice cream, ultra-fresh, in a wide variety of creative flavors. Environmentally conscious, locally sourced ingredients. Yelp's #1 ice cream in Vail. "Outstanding!! And I eat a lot of ice cream." One of the best scoops in the Vail Valley — worth seeking out. 242 E Meadow Dr.</div>
+      <div class="eat-links">
+        <a href="https://www.yelp.com/biz/sundae-vail-vail" class="eat-link" target="_blank">⭐ Reviews</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="ice cream">
+      <div class="eat-hdr"><div class="eat-icon">🍦</div><div><div class="eat-name">Rimini Gelato</div></div></div>
+      <div class="eat-cat">Gelato · Coffee · Lionshead · ~3 min walk</div>
+      <div class="eat-hours">⏰ Daily 8:00 AM – 9:00 PM</div>
+      <div class="eat-desc">24 gelato flavors daily — pumpkin spice, Dr. Pepper, birthday cake, and plenty of classics. Dairy-free sorbet collection too. Great affogato (espresso poured over gelato). Also serves coffee and pastries making it a good morning or afternoon stop. 675 Lionshead Pl — steps from Landmark.</div>
+      <div class="eat-links">
+        <a href="https://discovervail.com/blog/top-decadent-dessert-places-in-vail/" class="eat-link" target="_blank">📍 Discover Vail</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="ice cream">
+      <div class="eat-hdr"><div class="eat-icon">🍦</div><div><div class="eat-name">Joe's Famous Deli + Ice Cream</div></div></div>
+      <div class="eat-cat">Ice Cream · Deli · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily ~9:00 AM – 5:00 PM (confirm seasonally)</div>
+      <div class="eat-desc">Old-school deli with homemade ice cream made in-house. Creative flavors like cantaloupe sorbet alongside classics like butter pecan. Matcha, cotton candy — kids go crazy. "We went back two days in a row." Small shop, Vail prices, but the ice cream is exceptional. Great mid-afternoon stop in the Village.</div>
+      <div class="eat-links">
+        <a href="https://www.govail.com/heres-where-to-find-the-best-ice-cream-in-vail" class="eat-link" target="_blank">📖 GoVail Guide</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🌸</div><div><div class="eat-name">Root &amp; Flower <span class="must">Best Wine Bar</span></div></div></div>
+      <div class="eat-cat">Wine Bar · Cocktails · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Check current hours — open daily, typically 4pm+</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy Hour: Daily 5–6 PM · Huckleberry cocktail specials 50% off</div>
+      <div class="eat-desc">Locally owned modern wine bar in the heart of Vail Village, steps from Gondola One. 50+ wines by the glass, craft cocktails, changing New American small bites menu. Elegant, intimate atmosphere. "A darling spot and the happy hour prices are so reasonable, especially for Vail Village." Reserve for groups of 5+.</div>
+      <div class="eat-links">
+        <a href="https://www.rootandflowervail.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://discovervail.com/businesses/root-and-flower/" class="eat-link" target="_blank">📍 Discover Vail</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🥃</div><div><div class="eat-name">10th Mountain Whiskey &amp; Spirit Co.</div></div></div>
+      <div class="eat-cat">Distillery · Tasting Room · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily 11:00 AM – 11:00 PM · 227 Bridge St</div>
+      <div class="eat-desc">A Vail Village institution on Bridge Street with views of the Covered Bridge. Colorado-made whiskey, vodka, gin and rum honoring the 10th Mountain Division soldiers who trained near Vail during WWII. Signature cocktails, flights, and a full bar. Named after Camp Hale — now a national monument just 22 miles west. One of the most unique bar experiences in Vail.</div>
+      <div class="eat-links">
+        <a href="https://10thwhiskey.com/pages/tasting-room" class="eat-link" target="_blank">🌐 Tasting Room</a>
+        <a href="https://discovervail.com/blog/vail-breweries-distilleries/" class="eat-link" target="_blank">📍 Discover Vail</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🍺</div><div><div class="eat-name">Vail Brewing Company</div></div></div>
+      <div class="eat-cat">Craft Brewery · Eagle-Vail · ~10 min drive</div>
+      <div class="eat-hours">⏰ Daily 11:30 AM – 10:00 PM · Also has Vail Village tasting room (11am–10pm)</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 No formal happy hour · Seasonal discounts occasionally · Fire pit + food trucks on-site</div>
+      <div class="eat-desc">Small independent 10-barrel craft brewery in Eagle-Vail. Artisan hand-crafted ales in small batches — rotating taps always changing. Mountain lifestyle vibe, laid-back atmosphere, outdoor fire pit and rotating food trucks (often Rocky Mountain Taco). Family-friendly. Also has a tasting room location in Vail Village.</div>
+      <div class="eat-links">
+        <a href="http://www.vailbrewingco.com" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🏔</div><div><div class="eat-name">The George</div></div></div>
+      <div class="eat-cat">Bar &amp; Lounge · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Check current hours · Typically open late</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy Hour: Daily 5–6 PM · $5 you-call-it drinks · All starters &amp; pub grub $10.75</div>
+      <div class="eat-desc">Casual bar + restaurant beloved for some of the best happy hour deals in Vail. 30 canned craft beers including local Telluride and Vail brews. Famous surf &amp; turf ($5–6pm specials). Duck + mushroom quesadillas. Great late-night scene. Good for adults post-dinner drinks while kids are settled in.</div>
+      <div class="eat-links">
+        <a href="https://www.milehighhappyhour.com/best-bars-in-vail-co/" class="eat-link" target="_blank">📖 Bar Guide</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🏠</div><div><div class="eat-name">The Fitz Bar + Bites</div></div></div>
+      <div class="eat-cat">Bar · Manor Vail Lodge · Vail Village · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily from 4:00 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy Hour: Daily 4–5 PM · $1 off draft beers · $2 off tap wines</div>
+      <div class="eat-desc">Vintage-chic bar in Manor Vail Lodge with a gorgeous patio overlooking Gore Creek and mountain views. Creative cocktails, local Colorado brews. Upscale bar food: truffle fries, mac and cheese, buttered noodles and chicken fingers for kids. Consistently recommended as one of Vail's best bar experiences.</div>
+      <div class="eat-links">
+        <a href="https://wanderlog.com/list/geoCategory/1568062/best-happy-hours-in-vail" class="eat-link" target="_blank">📖 HH Guide</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🎵</div><div><div class="eat-name">Shakedown Bar</div></div></div>
+      <div class="eat-cat">Live Music Bar · Vail Village (top of Bridge St) · ~10 min walk</div>
+      <div class="eat-hours">⏰ Check current hours · Busy in summer evenings</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy hour + après specials · Best live rock music in Vail</div>
+      <div class="eat-desc">Vail's go-to for live music, après, and nightlife. Limited capacity to keep the vibe right. Best rock shows in town — Discover Vail consistently recommends it for nightlife. Good option for an adults' evening out.</div>
+      <div class="eat-links">
+        <a href="https://discovervail.com/blog/nightlife-in-vail/" class="eat-link" target="_blank">📍 Discover Vail Nightlife</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="winery">
+      <div class="eat-hdr"><div class="eat-icon">🍷</div><div><div class="eat-name">Vines at Vail Winery</div></div></div>
+      <div class="eat-cat">Winery · Wolcott (15 mi west) · Day Trip</div>
+      <div class="eat-hours">⏰ Summer (May 12–Oct 15): Wed–Sun 12:00 PM – 6:00 PM · 4098 Hwy 131, Wolcott</div>
+      <div class="eat-desc">Colorado's mountain winery — handcrafted small-lot wines from California grapes, made on-location in the Vail Valley. Tasting flights, barrel room, covered and uncovered patio with stunning mountain setting. "Rustic, Beautiful, and Peaceful." Open right during your trip dates. About 15 miles west of Vail near Wolcott, easy afternoon day trip from the Valley.</div>
+      <div class="eat-links">
+        <a href="https://www.vinesatvailwinery.com" class="eat-link" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🍾</div><div><div class="eat-name">Sweet Basil — Happy Hour</div></div></div>
+      <div class="eat-cat">Bar · Vail Village · ~10 min walk · Upscale</div>
+      <div class="eat-hours">⏰ Daily Happy Hour 3:00–5:00 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Bar menu + discounted seasonal cocktails · 500+ wine list</div>
+      <div class="eat-desc">Sweet Basil's happy hour is the best way to experience a Michelin-recognized restaurant without a dinner reservation. Bar seating available first-come. Inventive cocktails, exceptional wine selection, bar bites. "Mountain Standard also has a great happy hour with the friendliest bartenders." Great way to cap a hike day.</div>
+      <div class="eat-links">
+        <a href="https://sweetbasilvail.com" class="eat-link" target="_blank">🌐 Sweet Basil</a>
+      </div>
+    </div>
+
+    <div class="eat-card" data-meal="bar">
+      <div class="eat-hdr"><div class="eat-icon">🔥</div><div><div class="eat-name">Mountain Standard — Happy Hour</div></div></div>
+      <div class="eat-cat">Bar · Vail Village (Gore Creek) · ~10 min walk</div>
+      <div class="eat-hours">⏰ Daily Happy Hour 3:00–5:00 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Discounted wood-fired apps + craft cocktails</div>
+      <div class="eat-desc">The Michelin-recommended wood-fire tavern has a great happy hour — snag bar seats along the creek. "Mountain Standard also has a great happy hour with the friendliest bartenders." Perfect après-hike drinks with spectacular creekside views. Best pimento cheese board in Vail.</div>
+      <div class="eat-links">
+        <a href="https://mtnstandard.com" class="eat-link" target="_blank">🌐 Mountain Standard</a>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="eat-card" data-meal="dinner">
+      <div class="eat-hdr"><div class="eat-icon">🍝</div><div><div class="eat-name">Tavernetta — Denver <span class="must">Michelin</span></div></div></div>
+      <div class="eat-cat">Lunch · Dinner · Union Station, Denver · On DEN→Vail or DEN→DTW day</div>
+      <div class="eat-hours">⏰ Mon–Fri 11:30 AM – 10:00 PM · Sat–Sun 3:00 PM – 10:00 PM</div>
+      <div class="eat-hours" style="background:#FFFBE8;border-color:var(--gold);color:#7A5C00;">🍹 Happy Hour: Daily 3:00–6:00 PM · Bar bites + cocktail specials · Patio + lounge walk-ins welcome</div>
+      <div class="eat-desc">Michelin Bib Gourmand 2025 (two years running) — excellent value for the quality. By the acclaimed Frasca Hospitality Group. Fresh handmade pastas (cacio e pepe, lamb ragu rigatoni), Italian wine list, skilled sommelier. Located steps from Denver Union Station at 1889 16th St. <strong>Best use: lunch stop on arrival day (Mon Jun 22, ~11:30am arrival area) or final dinner before departure airport run (Jun 29).</strong> Patio + bar seats available walk-in. Reserve via OpenTable for dinner.</div>
+      <div class="eat-links">
+        <a href="https://www.tavernettadenver.com" class="eat-link" target="_blank">🌐 Website</a>
+        <a href="https://www.opentable.com/r/tavernetta-denver" class="eat-link" target="_blank">📅 OpenTable</a>
+        <a href="https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/tavernetta" class="eat-link" target="_blank">⭐ Michelin Guide</a>
+      </div>
+    </div>
+
+  
+
+  <div class="info-box" style="margin-top:8px;">
+    <h4>🍺 Quick Happy Hour Cheat Sheet — Vail June 2026</h4>
+    <ul>
+      <li><strong>Root &amp; Flower:</strong> 5–6 PM · Huckleberry cocktails 50% off</li>
+      <li><strong>The George:</strong> 5–6 PM · $5 you-call-it · $10.75 all starters &amp; pub food</li>
+      <li><strong>The Fitz:</strong> 4–5 PM · $1 off drafts · $2 off tap wines</li>
+      <li><strong>Garfinkel's:</strong> 3–5 PM · Drink + snack deals on sunny deck</li>
+      <li><strong>Sweet Basil:</strong> 3–5 PM · Bar menu + cocktail specials</li>
+      <li><strong>Mountain Standard:</strong> 3–5 PM · Discounted apps + cocktails</li>
+      <li><strong>Two Arrows:</strong> Transitions to cocktail bar after 5 PM — no formal HH but great value craft cocktails</li>
+      <li><strong>Beaver Creek Unplugged (Thu):</strong> Free outdoor concerts + BOGO lifts after noon at Beaver Creek</li>
+      <li><strong>Alpenrose:</strong> Check on-site — fondue + raclette combos available Thu–Sun</li>
+    </ul>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================== ESSENTIALS TAB ==================== -->
+<div id="tab-info" class="tab-pane">
+  <div class="section-eyebrow">Trip Info</div>
+  <p class="section-title">Vail Essentials</p>
+
+  <div class="info-box"><h4>🌅 Sun &amp; Weather — June 22–29, 2026</h4><ul>
+    <li><strong>Sunrise:</strong> ~5:38–5:42 AM &nbsp;·&nbsp; <strong>Sunset:</strong> ~8:28–8:30 PM &nbsp;·&nbsp; ~14 hrs 50 min of daylight</li>
+    <li>Late June weather in Vail: warm days (70s°F in town, 50s°F on mountain), cool nights (40–50s°F)</li>
+    <li><strong>Afternoon thunderstorms are common daily in June–August</strong> — plan ridge hikes to finish by noon–1pm</li>
+    <li>Wildflower season: early bloom by June 22. Peak wildflowers shift to mid-July at higher elevations</li>
+  </ul></div>
+
+  <div class="info-box"><h4>🏠 Unit 507 — Key Details</h4><ul>
+    <li>4 bedrooms · 4 baths · 2,300 sq ft · Penthouse 5th floor · Sleeps 9</li>
+    <li>Master: King · BR2: Split King (converts to 2 twins) · BR3: Queen · BR4: Captain Bunks + Futon/twin pullout + gaming system</li>
+    <li><strong>Check-in:</strong> After 4:00 PM · Front Desk at 610 W Lionshead Cir (open 8am–10pm)</li>
+    <li><strong>Check-out:</strong> By 11:00 AM on June 29</li>
+    <li><strong>Parking:</strong> Free underground garage on-site · No reservation needed</li>
+    <li>Balcony overlooks pool + Lionshead + Vail Mountain · Elevator to 5th floor</li>
+    <li><strong>A/C:</strong> Yes, central air conditioning available</li>
+    <li><strong>Kitchen:</strong> Full Wolf SS kitchen with island — Wolf range, Sub-Zero refrigerator, dishwasher, full cookware. Seats 4 at island + dining for 10.</li>
+    <li>Contact: (970) 476-1350 · <a href="https://www.landmarkatvail.com" target="_blank">landmarkatvail.com</a></li>
+  </ul></div>
+
+  <div class="info-box"><h4>🚌 Getting Around Vail</h4><ul>
+    <li><strong>Free in-town bus (Town of Vail):</strong> Connects Lionshead, Vail Village, East Vail, West Vail. Frequent service. Use for Booth Falls (East Vail bus) and most in-town trips.</li>
+    <li><strong>Car (Budget Minivan):</strong> Needed for Shrine Ridge (I-70 Exit 190), Breckenridge, Beaver Creek, Nottingham Lake. Free parking at Landmark.</li>
+    <li><strong>Walking:</strong> Lionshead → Vail Village ~10 min. Betty Ford Gardens ~12 min. Little Diner + Sunbird Park ~2–3 min.</li>
+    <li><strong>Free shuttle to Vail Village:</strong> Available from Lionshead — check schedule at front desk.</li>
+  </ul></div>
+
+  <div class="info-box"><h4>⛰ Altitude &amp; Safety</h4><ul>
+    <li>Vail: 8,150 ft · Hike trailheads: 9,400–11,000 ft · Ridge summits: 11,000–11,700 ft</li>
+    <li><strong>Day 1–2:</strong> Acclimate — stay hydrated, avoid overexertion, rest, short walks only</li>
+    <li>Drink 2–3x normal water on hike days · Kids dehydrate faster at altitude</li>
+    <li>Altitude symptoms (headache, nausea, fatigue): slow down, descend, hydrate</li>
+    <li>Sunscreen is critical — UV intensity is much higher at elevation. Kids especially</li>
+    <li>Lightning: off all exposed ridges by noon–1pm in summer</li>
+    <li>Wildlife: stay 75 ft from moose and bear. Carry bear spray on remote hikes</li>
+  </ul></div>
+
+  <div class="info-box"><h4>👶 Kid-Specific Tips (Ages 1–9)</h4><ul>
+    <li><strong>Age 1:</strong> Hiking carrier/backpack required. Gondola, Betty Ford Gardens, Sunbird Park, Gore Creek walks, playgrounds all great.</li>
+    <li><strong>Ages 3–5:</strong> Pirateship Park, Epic Discovery kids activities, first 1–2 miles of Berrypicker, all playgrounds.</li>
+    <li><strong>Ages 6–9:</strong> All hikes work — Booth Falls (waterfall turnaround), Shrine Ridge open meadows, Rainbow Lake easy loop, Eagle's Loop.</li>
+    <li>Pack: layers, rain jacket, snacks, sunscreen, carrier, refillable water bottles, AllTrails downloaded offline.</li>
+    <li>Mountain terrain — a quality structured carrier (Osprey, Deuter) is better than a stroller on trails.</li>
+  </ul></div>
+
+  <div class="info-box"><h4>🛒 Groceries &amp; Supplies</h4><ul>
+    <li><strong>Safeway Vail:</strong> 2131 N Frontage Rd W · Daily 6am–11pm · Closest full grocery · Deli, bakery, butcher, pharmacy</li>
+    <li><strong>City Market Vail:</strong> ~1 mi from Landmark · Daily 6am–11pm · Good produce + pharmacy</li>
+    <li><strong>Walmart + Whole Foods (Frisco, Exit 203):</strong> Best en-route stock-up on arrival day</li>
+    <li><strong>Landmark Convenience Store:</strong> On-site for quick items, snacks, drinks</li>
+    <li>Stock: sunscreen (SPF 50+), trail snacks, packed lunch supplies, water bottles, bug spray, first aid kit</li>
+    <li>Colorado fishing license: <a href="https://cpw.state.co.us" target="_blank">cpw.state.co.us</a></li>
+  </ul></div>
+
+  <div class="info-box"><h4>📱 Useful Links &amp; Sources</h4><ul>
+    <li><a href="https://www.alltrails.com" target="_blank">AllTrails</a> — Download all trail maps offline before leaving cell service</li>
+    <li><a href="https://discovervail.com" target="_blank">Discover Vail</a> — Trail closures, events, current conditions · <a href="https://discovervail.com/blog/grab-your-hiking-boots-the-hills-are-alive/" target="_blank">Vail Hikes Guide</a></li>
+    <li><a href="https://www.vail.com" target="_blank">Vail Resort</a> — Epic Discovery hours + tickets · <a href="https://news.vailresorts.com/VailSummer2025" target="_blank">Vail Summer 2025 Tips</a></li>
+    <li><a href="https://www.pineyriverranch.com" target="_blank">Piney River Ranch</a> — Confirm opening dates + hours</li>
+    <li><a href="https://www.breckenridge.com" target="_blank">Breckenridge.com</a> — BreckConnect Gondola hours · <a href="https://news.vailresorts.com/BreckSummer25" target="_blank">Breck Summer 2025 Tips</a> · <a href="https://gobreck.com/plan-your-visit/breckenridge-ski-resort/epic-discovery/" target="_blank">Breck Epic Discovery</a></li>
+    <li><a href="https://www.beavercreek.com" target="_blank">Beaver Creek</a> — Thursday concert schedule (BC Unplugged) + summer activities</li>
+    <li><a href="https://forecast.weather.gov" target="_blank">Weather.gov</a> — Search Vail, CO for hourly mountain forecasts</li>
+    <li><a href="https://www.vailgov.com/government/hikevail" target="_blank">HikeVail.com</a> — Official town hiking resources + free bus info</li>
+    <li><a href="https://www.vailgfa.com/calendar/" target="_blank">Gerald R. Ford Amphitheater Calendar</a> — Concert schedule + free events</li>
+    <li><a href="https://chasingrabbitsvail.com" target="_blank">Chasing Rabbits Vail</a> — Rabbit Hole arcade + restaurant hours</li>
+    <li><a href="https://sonnenalp.com/spa/" target="_blank">Sonnenalp Spa</a> — Book treatments + day passes · (970) 479-5404</li>
+    <li><a href="https://www.bettyfordalpinegardens.org" target="_blank">Betty Ford Alpine Gardens</a> — Hours + seasonal bloom info</li>
+    <li><a href="https://jesswandering.com/the-best-things-to-do-in-vail-colorado-during-the-summer/" target="_blank">Jess Wandering — Vail Summer Guide</a> — Trails, gondola, Eagles Loop, Shrine Ridge</li>
+    <li><a href="https://knownothingnomads.com/shrine-ridge-trail-a-wildflower-paradise/" target="_blank">Know Nothing Nomads — Shrine Ridge</a> — Wildflower guide</li>
+    <li><a href="https://knownothingnomads.com/best-hiking-in-breckenridge/" target="_blank">Know Nothing Nomads — Breckenridge Hikes</a> — Aspen Alley + more</li>
+    <li><a href="https://www.foxintheforest.net/vail-hikes/" target="_blank">Fox in the Forest — Vail Hikes</a> — Gore Lake, Pitkin Lake</li>
+    <li><a href="https://eastwest.com/insights/vacation-rentals/best-hiking-trails-and-mountain-views-in-vail/" target="_blank">East West Hospitality — Vail Trails</a> — Booth Falls + area guide</li>
+    <li><a href="https://www.vailmanagement.com/blog/your-ultimate-locals-guide-summer-vail-colorado-top-trails-events-and-hidden-gems" target="_blank">Vail Management Co. — Locals Guide</a> — Hidden gems + Strawberry Lane Loop</li>
+    <li><a href="https://bluemountainbelle.com/shrine-ridge-hike-vail/" target="_blank">Blue Mountain Belle — Shrine Ridge</a></li>
+    <li><a href="https://lostbetweenoceans.com/breckenridge-troll-hike-full-guide/" target="_blank">Lost Between Oceans — Breckenridge Troll Guide</a></li>
+    <li><a href="https://danielleoutdoors.com/breckenridge-troll/" target="_blank">Danielle Outdoors — Breckenridge Troll</a></li>
+    <li><a href="https://www.denver7.com/news/recreation/great-fall-hikes-rainbow-lake-in-frisco" target="_blank">Denver7 — Rainbow Lake Frisco</a></li>
+    <li><a href="https://www.denver7.com/news/recreation/great-fall-hikes-aspen-alley-trail-in-breckenridge" target="_blank">Denver7 — Aspen Alley Breckenridge</a></li>
+    <li><a href="https://www.townoffrisco.com/things-to-do/activities/hiking-running/" target="_blank">Town of Frisco Hiking</a> — Rainbow Lake + local trails</li>
+    <li><a href="https://www.vailvacay.com/blog/things-to-do-in-vail-in-summer-11-amazing-activities-you-can%E2%80%99t-miss" target="_blank">Vail Vacay — Summer Activities</a></li>
+    <li><a href="https://www.movingmountains.com/blog/paddlesports-guide-for-the-vail-valley" target="_blank">Moving Mountains — Paddlesports Guide</a></li>
+    <li><a href="https://www.onlyinyourstate.com/nature/colorado/must-see-alpine-hike-co" target="_blank">Only in Your State — Berrypicker Trail</a></li>
+    <li>YouTube — Vail Summer: <a href="https://youtu.be/ZpP5hBg8Uyk" target="_blank">Video 1</a> · <a href="https://youtu.be/Osm4Hjq2oJs" target="_blank">Video 2</a> · <a href="https://youtu.be/Y7MdvoA52bc" target="_blank">Video 3</a></li>
+    <li>Instagram — Breckenridge: <a href="https://www.instagram.com/reel/DMEFX0ROKq8/" target="_blank">Reel</a> · <a href="https://www.instagram.com/p/DLSvzhhyOtz/" target="_blank">Post 1</a> · <a href="https://www.instagram.com/p/DXwrPgcAMFW/" target="_blank">Post 2</a></li>
+    <li>Instagram — Vail: <a href="https://www.instagram.com/reel/DOROIPhDVlz/" target="_blank">Reel 1</a> · <a href="https://www.instagram.com/reel/DNl57z5yOP3/" target="_blank">Reel 2</a></li>
+  </ul></div>
+
+</div>
+
+<!-- ==================== GROCERY LIST TAB ==================== -->
+<div id="tab-grocery" class="tab-pane">
+  <div class="section-eyebrow">Trip Prep</div>
+  <p class="section-title">Grocery List — Vail June 2026</p>
+  <p style="font-size:.85rem;color:#666;margin-bottom:8px;"><strong>Plan:</strong> Stop at <strong>Walmart + Whole Foods (Frisco, Exit 203)</strong> on the drive from DEN for non-perishables. Pick up perishables at <strong>Safeway or City Market in Vail</strong> (~3–4 min from Landmark) after check-in.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;">
+
+    <div class="info-box">
+      <h4>🥫 Non-Perishables <span style="font-size:.75rem;font-weight:400;color:var(--mist)">(Get at Frisco Walmart/Whole Foods)</span></h4>
+      <div id="nonperishable-list" style="margin-top:8px;"></div>
+    </div>
+
+    <div class="info-box">
+      <h4>🥩 Cold &amp; Perishables <span style="font-size:.75rem;font-weight:400;color:var(--mist)">(Get at Vail Safeway or City Market)</span></h4>
+      <div id="perishable-list" style="margin-top:8px;"></div>
+    </div>
+
+  </div>
+
+  <div class="info-box">
+    <h4>🏪 Where to Shop</h4>
+    <ul>
+      <li><strong>Walmart Supercenter (Frisco, Exit 203):</strong> Best value for bulk non-perishables, sunscreen, bug spray, snacks, water, paper goods, alcohol</li>
+      <li><strong>Whole Foods (Frisco, Exit 203, same plaza):</strong> Organic produce, specialty items, fresh bread, good cheese — right next to Walmart</li>
+      <li><strong>Safeway — Vail (2131 N Frontage Rd W):</strong> Closest full grocery to Landmark · Daily 6am–11pm · Deli, bakery, butcher, pharmacy</li>
+      <li><strong>City Market — Vail:</strong> Slightly larger, ~1 mi away · Daily 6am–11pm · Great produce + pharmacy</li>
+      <li><strong>Landmark Convenience Store:</strong> On-site for forgotten items and quick grabs</li>
+    </ul>
+  </div>
+</div>
+
+</div><!-- end .main-wrap -->
+
+<script>
+function switchTab(id,btn){
+  document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');
+  if(id==='map') setTimeout(initMap,100);
+}
+function toggleDay(h){
+  const b=h.nextElementSibling,t=h.querySelector('.day-toggle'),o=b.classList.contains('open');
+  b.classList.toggle('open',!o);t.classList.toggle('open',!o);
+}
+function expandAll(){document.querySelectorAll('.day-body').forEach(b=>b.classList.add('open'));document.querySelectorAll('.day-toggle').forEach(t=>t.classList.add('open'));}
+function collapseAll(){document.querySelectorAll('.day-body').forEach(b=>b.classList.remove('open'));document.querySelectorAll('.day-toggle').forEach(t=>t.classList.remove('open'));}
+function filterTable(type,btn){
+  document.querySelectorAll('#filter-bar .fb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
+  document.querySelectorAll('#tracking-table tbody tr').forEach(r=>{
+    var show = (type==='all' || r.dataset.type===type);
+    r.style.display = show ? '' : 'none';
+  });
+}
+function filterEat(meal,btn){
+  document.querySelectorAll('.filter-bar .fb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
+  document.querySelectorAll('#eat-grid .eat-card').forEach(c=>{c.style.display=(meal==='all'||(c.dataset.meal||'').includes(meal))?'':'none';});
+}
+
+var nonPerishables = [
+  'Apples','Blueberries','Strawberries','Bananas','Bell peppers x2','Onion x1',
+  'Water (cases)','Taco spice mix','Salsa','Tortilla chips',
+  'Spaghetti noodles + sauce','Bread x2','Peanut butter','Jelly',
+  'Granola','Trail mix','Coffee','Bars (adult)','Riley cliff bars',
+  'Small Cheerios','Crackers (Riley)','Snack chips','La Croix',
+  'Margarita mix / tequila','Beer (6-pack or case)','Wine (red + white)',
+  'Lotion','Baby soap',
+  'Diapers','Pull-ups','Wipes','Baggies (sandwich + snack size)'
+];
+var perishables = [
+  'Pizza (frozen)','Frozen chicken nuggets','Ground turkey',
+  'Frozen broccoli','Salad greens','Milk','Yogurts',
+  'Ice cream','Shredded cheese'
+];
+
+function buildGroceryList() {
+  var nl = document.getElementById('nonperishable-list');
+  var pl = document.getElementById('perishable-list');
+  if (!nl || !pl) return;
+  function makeList(arr, el) {
+    arr.forEach(function(item) {
+      var row = document.createElement('div');
+      row.style.cssText = 'display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f0ede8;font-size:.85rem;cursor:pointer;';
+      var cb = document.createElement('input');
+      cb.type = 'checkbox'; cb.style.cssText = 'width:16px;height:16px;flex-shrink:0;accent-color:#1E3A2F;cursor:pointer;';
+      var lbl = document.createElement('span');
+      lbl.textContent = item;
+      cb.addEventListener('change', function() {
+        lbl.style.textDecoration = cb.checked ? 'line-through' : '';
+        lbl.style.color = cb.checked ? '#aaa' : '';
+      });
+      row.appendChild(cb); row.appendChild(lbl);
+      row.addEventListener('click', function(e){ if(e.target !== cb) { cb.checked = !cb.checked; cb.dispatchEvent(new Event('change')); }});
+      el.appendChild(row);
+    });
+  }
+  makeList(nonPerishables, nl);
+  makeList(perishables, pl);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var f = document.querySelector('.day-header');
+  if (f) toggleDay(f);
+  buildGroceryList();
+});
+</script>
+<!-- Leaflet for map tab -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+window._mapReady = false;
+function initMap() {
+  if (window._mapReady) return;
+  if (typeof L === 'undefined') { setTimeout(initMap, 300); return; }
+  window._mapReady = true;
+  var m = L.map('mapContainer').setView([39.640, -106.374], 11);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap', maxZoom: 18
+  }).addTo(m);
+  var pts = [
+    // ── LODGING ──
+    [39.6396, -106.3742, '🏠', 'Landmark Residences #507', '610 W Lionshead Cir · Your Home Base · 4BR/4BA · Steps from Eagle Bahn Gondola'],
+
+    // ── VAIL GONDOLAS ──
+    [39.6415, -106.3750, '🚡', 'Eagle Bahn Gondola (#19)', 'Steps from Landmark · Epic Discovery · Berrypicker Trail base · FREE down for hikers'],
+    [39.6398, -106.3714, '🚡', 'Gondola One', 'Vail Village · Mid-Vail · Connects to Berrypicker Trail'],
+
+    // ── VAIL HIKES (in town / walkable) ──
+    [39.6400, -106.3740, '🥾', 'Gore Valley Trail (Gore Creek Path)', 'Steps from Landmark · Flat paved creek path · 2–19 mi · Free · Stroller-friendly'],
+    [39.6415, -106.3748, '🥾', 'Berrypicker Trail Base', 'Starts at Lionshead gondola base · 3.4 mi up · 2,230 ft · Gondola FREE down for hikers'],
+
+    // ── VAIL HIKES (East Vail) ──
+    [39.6443, -106.3308, '🥾', 'Booth Falls Trailhead', '4.7 mi RT · 1,325 ft · 60-ft waterfall · Take free East Vail bus from VTC · No car parking'],
+    [39.6291, -106.3246, '🥾', 'Gore Lake Trailhead', '12.25 mi RT · 2,900 ft · Full day · Backcountry alpine lake · Free Hiker Shuttle'],
+    [39.6317, -106.3152, '🥾', 'Deluge Lake Trailhead', '8.5 mi RT · 3,500 ft · Full day · Grueling steep climb · Hiking poles recommended'],
+    [39.6350, -106.3100, '🥾', 'Pitkin Lake Trailhead', '10 mi RT · 3,000 ft · Full day · Waterfalls + wildflower fields · Hiker Shuttle peak weekends'],
+
+    // ── VAIL HIKES (North of Vail / flagged) ──
+    [39.7278, -106.3617, '🚩', 'Piney River Ranch + Upper Piney Falls', '🚩 High-clearance road · 6 mi RT · SUP/Canoe $40/hr · Wildflowers + Gore Range views'],
+    [39.6900, -106.3800, '🚩', 'Lost Lake Trailhead', '🚩 4WD alternate route · 7 mi RT standard · 950 ft · Free · Peaceful hidden alpine lake'],
+
+    // ── VAIL HIKES (Vail Pass / Shrine Ridge) ──
+    [39.5336, -106.2444, '🥾', 'Shrine Ridge Trailhead', '4.6 mi RT · 1,000 ft · I-70 Exit 190 · Standard car OK · Peak wildflowers · Holy Cross views'],
+    [39.4770, -106.4590, '🚩', 'Notch Mountain Trailhead', '🚩 8-mile Tigiwon Rd rough road · 10 mi RT · 2,700 ft · Demanding exposed alpine trek'],
+
+    // ── VAIL PLAYGROUNDS ──
+    [39.6389, -106.3719, '🏴‍☠️', 'Pirateship Park', '9 Hanson Ranch Rd · Free · Custom pirate ship · Dragon, cannons, nets · Vail Village'],
+    [39.6396, -106.3755, '🪺', 'Sunbird Park', '555 E Lionshead Cir · ~2 min walk from Landmark · Named one of world\'s coolest playgrounds'],
+
+    // ── VAIL PARKS / GARDENS ──
+    [39.6380, -106.3717, '🌺', 'Betty Ford Alpine Gardens + Ford Park', 'Free · Highest botanical garden in NA · Playground + Gore Creek wading · GRF Amphitheater'],
+    [39.6378, -106.3710, '🎵', 'Gerald R. Ford Amphitheater', 'Ford Park · Free lawn concerts · Ticketed shows audible free from park'],
+    [39.6325, -106.3760, '🌿', 'Donovan Park (West Vail)', '~10 min drive W · Soccer fields, basketball, playground, picnic shelter, creek access · Free'],
+
+    // ── VAIL ACTIVITIES ──
+    [39.6390, -106.3710, '🎮', 'Chasing Rabbits — Rabbit Hole Arcade', '141 E Meadow Dr · Vail Village · Alice in Wonderland themed · Pac-Man, Skee-Ball, air hockey + speakeasy'],
+    [39.6403, -106.3748, '⛳', 'Gore Creek Mini Golf', 'Base of Eagle Bahn Gondola · ~2 min walk from Landmark · Small fee · All ages'],
+    [39.6397, -106.3724, '💆', 'Sonnenalp Spa', '20 Vail Rd · ~10 min walk E · Massages, facials, oxygen bar · Day pass ~$50 · Book: 970-479-5404'],
+    [39.6392, -106.3720, '🛍', 'Vail Village + Farmers Market', 'Vail Village plaza · Boutique shops, restaurants · Farmers Market Saturdays in summer'],
+
+    // ── VAIL RESTAURANTS ──
+    [39.6404, -106.3748, '🍕', 'Blue Moose Pizza', '675 Lionshead Pl · ~3 min walk W · Daily 11am–9pm · NY-style pizza · Lionshead patio'],
+    [39.6400, -106.3752, '🍳', 'The Little Diner', 'West Lionshead Plaza · ~3 min walk W · Daily 7am–2pm · Best breakfast in Vail'],
+    [39.6402, -106.3750, '🥐', 'The Belle', '~2 min walk W · Lionshead · Daily 7am–3pm · Gourmet coffee + croissants + burritos'],
+    [39.6401, -106.3748, '🦌', "Garfinkel's (Garfs)", 'Lionshead · ~3 min walk W · Sunny deck · Elk Mountain Dog · Kids Cafe · Call to confirm: 970-476-3789'],
+    [39.6398, -106.3753, '🏔', 'Alpenrose Vail', 'Lionshead · ~8 min walk · Thu–Sun 11:30am–10pm · Fondue + raclette at your table · Kids menu'],
+    [39.6396, -106.3756, '🥗', 'Westside Cafe', '2211 N Frontage Rd W · ~5 min drive W · Daily 7am–3pm · Locals fave breakfast'],
+    [39.6399, -106.3719, '🍷', 'Sweet Basil', '193 Gore Creek Dr · ~10 min walk E · Michelin · Daily dinner 5–9pm · Reserve exploretock.com'],
+    [39.6398, -106.3718, '🔥', 'Mountain Standard', '193 Gore Creek Dr · ~10 min walk E · Daily 11:30am–9pm · Wood-fire Michelin · opentable.com'],
+    [39.6401, -106.3720, '🍝', 'La Nonna Vail', '100 E Meadow Dr · ~10 min walk E · Mon–Sat 5–9pm · Handmade pasta daily · Closed Sunday'],
+    [39.6397, -106.3722, '🇨🇭', 'Swiss Chalet Restaurant (Sonnenalp)', '20 Vail Rd · ~10 min walk E · Wed–Sun 5–10pm · Fondue + raclette · Wine Spectator Award'],
+    [39.6400, -106.3721, '🍔', 'Bully Ranch Restaurant', '20 Vail Rd (Sonnenalp) · ~10 min walk E · Daily 11am–10pm · Patio · Kids Cafe menu'],
+    [39.6398, -106.3744, '☕', "Yeti's Grind", '141 E Meadow Dr · ~8 min walk E · Best coffee in Vail 8 years · Daily 7am–6/7pm'],
+    [39.6399, -106.3742, '🏹', 'Two Arrows Coffee + Bar', 'Vail Village · ~8 min walk E · Daily 7am–midnight · Coffee by day, cocktails by night'],
+    [39.6406, -106.3746, '🍦', 'Rimini Gelato', '675 Lionshead Pl · ~3 min walk W · Daily 8am–9pm · 24 flavors + affogato + coffee'],
+    [39.6397, -106.3720, '🍨', 'Sundae — Vail', '242 E Meadow Dr · ~10 min walk E · Daily 11am–10pm · Yelp #1 ice cream in Vail'],
+    [39.6398, -106.3719, '🍦', "Joe's Famous Deli + Ice Cream", 'Vail Village · ~10 min walk E · Homemade ice cream · Creative flavors · ~9am–5pm'],
+    [39.6397, -106.3718, '🍭', "Fuzziwig's Candy Factory", 'Vail Village · ~10 min walk E · Fresh fudge + candied apples · Kids love it'],
+    [39.6403, -106.3749, '🍦', 'Rocket Fizz', 'Lionshead · ~3 min walk W · Novelty sodas + bulk candy'],
+
+    // ── VAIL BARS ──
+    [39.6399, -106.3720, '🌸', 'Root & Flower Wine Bar', 'Vail Village · ~10 min walk E · Daily from 4pm · Happy Hour 5–6pm Huckleberry cocktails 50% off'],
+    [39.6397, -106.3716, '🥃', '10th Mountain Whiskey & Spirit Co.', '227 Bridge St · ~10 min walk E · Daily 11am–11pm · Colorado-made whiskey, vodka, gin'],
+    [39.6395, -106.3717, '🏔', 'The George', 'Vail Village · ~10 min walk E · Happy Hour 5–6pm · $5 drinks + $10.75 all starters'],
+    [39.6402, -106.3719, '🏠', 'The Fitz Bar + Bites', 'Manor Vail Lodge · ~10 min walk E · From 4pm · Happy Hour 4–5pm $1 off drafts'],
+    [39.6396, -106.3715, '🎵', 'Shakedown Bar', 'Top of Bridge St · ~12 min walk E · Live music + après · Best rock shows in Vail'],
+    [39.6400, -106.3723, '🍺', 'Vail Brewing Co. (tasting room)', 'Vail Village tasting room · ~10 min walk E · Daily 11:30am–10pm · Craft ales'],
+    [39.6401, -106.3747, '🍾', 'Talons Deck at Summit', 'Eagles Nest atop Vail Mountain via gondola · Open Epic Discovery hours'],
+
+    // ── AVON / BEAVER CREEK ──
+    [39.6322, -106.5151, '🏄', 'Nottingham Lake (Avon)', '~15 min W · SUP + Paddle rentals · Stand Up Paddle Colorado · Calm flat water'],
+    [39.6046, -106.5168, '🚡', 'Beaver Creek Centennial Express', '~25–30 min W · Thu BOGO after noon · Thu BC Unplugged free concerts'],
+
+    // ── SILVERTHORNE / WILLOW LAKES ──
+    [39.6160, -106.0750, '🥾', 'Willow Lakes Trailhead', '~35 min NW near Silverthorne · 11.5 mi RT · 2,750 ft · Full day · Three alpine lakes'],
+
+    // ── FRISCO / OFFICER'S GULCH ──
+    [39.5375, -106.1442, '🏞', "Officer's Gulch Pond", 'I-70 Exit 198 · ~18 min E · 0.9 mi loop · Free · Great arrival-day roadside stop'],
+    [39.4960, -106.0950, '🦌', 'Rainbow Lake Trailhead (Frisco)', 'I-70 Exit 203 · ~25 min E · 1.6 mi RT · 157 ft · Free · Easy family hike · Grocery stores nearby'],
+
+    // ── BRECKENRIDGE ──
+    [39.4841, -106.0485, '🚡', 'BreckConnect Gondola', '170 Watson Ave, Breckenridge · FREE · ~40 min W · Jun 16–Sept 7 · 9:30am–5:30pm'],
+    [39.4804, -106.0637, '🧌', 'Breckenridge Troll (Isak Heartstone)', '1.2 mi RT · Free · Start at Stephen C. West Ice Arena · Major kids hit'],
+    [39.4870, -106.0540, '🌲', 'Aspen Alley Trail', '2.9 mi · 531 ft · Lower TH: Old Sawmill Museum or town shuttle · Breck area'],
+    [39.4839, -106.0477, '🏘', 'Main Street Breckenridge', 'Historic Victorian mining town · Free to explore · Shops, eateries, farmers market Saturdays'],
+    [39.4838, -106.0471, '🎢', 'Breck Epic Discovery (Peak 8 Base)', 'Top of BreckConnect Gondola · Gold Runner Coaster · Alpine Slide · Ziplines · Climbing wall'],
+
+    // ── WINERY ──
+    [39.7460, -106.6890, '🍷', 'Vines at Vail Winery (Wolcott)', '4098 Hwy 131, Wolcott · ~15 min W · Summer Wed–Sun 12–6pm · Mountain winery tasting room'],
+
+    // ── DENVER ──
+    [39.7528, -104.9997, '🍝', 'Tavernetta (Denver / Union Station)', '1889 16th St, Denver · Michelin Bib Gourmand · Mon–Fri 11:30am+ · Near DEN on arrival/departure day']
+  ];
+  pts;
+  pts.forEach(function(p) {
+    var ic = L.divIcon({
+      className: '',
+      html: '<div style="font-size:22px;filter:drop-shadow(1px 1px 3px rgba(0,0,0,.5));cursor:pointer">' + p[2] + '</div>',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    });
+    L.marker([p[0], p[1]], {icon: ic}).addTo(m)
+      .bindPopup('<strong>' + p[3] + '</strong><br><span style="font-size:12px;color:#555">' + p[4] + '</span>');
+  });
+}
+</script>
+</body>
+</html>
